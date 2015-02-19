@@ -1,0 +1,18 @@
+{
+    "replacements": {
+        "trim_excessive_newlines": {
+            // (new lines at end of file | new lines at start of file)
+            "find": "(((\\r?\\n)+)(?=(\\r?\\n){1}(?![\\s\\S\\r\\n]))|(?<![\\s\\S\\r\\n])((\\r?\\n)+))",
+            "replace": ""
+        },
+    },
+
+    "on_save": true,
+
+    "on_save_sequences": [
+        {
+            "file_pattern": ["*"],
+            "sequence": ["trim_excessive_newlines"]
+        }
+    ]
+}

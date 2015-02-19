@@ -1,0 +1,44 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"python",
+				"-u",
+				"$file"
+			],
+			"env":
+			{
+				"PYTHONPATH": "/Users/drodriguez/code/dsb"
+			},
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "dsb",
+			"path": "/Users/drodriguez/anaconda/envs/conda-cluster/bin:$PATH",
+			"selector": "source.python"
+		}
+	],
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/Users/drodriguez/code/conda-cluster"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/drodriguez/.conda-cluster"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/drodriguez/code/conda-cluster-utils"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/drodriguez/code/datasciencebox"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/drodriguez/.datasciencebox"
+		}
+	]
+}
