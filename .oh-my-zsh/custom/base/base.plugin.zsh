@@ -1,5 +1,7 @@
 alias k=clear
 
+export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+
 c() {
     cd $HOME/code/$1
 }
