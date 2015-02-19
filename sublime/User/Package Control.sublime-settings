@@ -1,7 +1,16 @@
 {
+	"in_process_packages":
+	[
+	],
 	"installed_packages":
 	[
+		"Jinja2",
+		"Markdown Preview",
+		"Package Control",
+		"Project Manager",
 		"RegReplace",
+		"SaltStack-related syntax highlighting and snippets",
+		"SideBarEnhancements",
 		"Theme - Soda"
 	]
 }
