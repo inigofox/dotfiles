@@ -4,6 +4,15 @@
 		{
 			"follow_symlinks": true,
 			"path": "/Users/drodriguez/code/dotfiles"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/drodriguez/.oh-my-zsh"
+		},
+		{
+			"follow_symlinks": true,
+			"path": "/Users/drodriguez",
+			"folder_include_patterns": [".*"]
 		}
 	]
 }

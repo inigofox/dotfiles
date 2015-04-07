@@ -4,13 +4,17 @@
 	],
 	"installed_packages":
 	[
+		"Dockerfile Syntax Highlighting",
+		"Evernote",
 		"Jinja2",
+		"Markdown Extended",
 		"Markdown Preview",
 		"Package Control",
 		"Project Manager",
 		"RegReplace",
 		"SaltStack-related syntax highlighting and snippets",
 		"SideBarEnhancements",
+		"Theme - Afterglow",
 		"Theme - Soda"
 	]
 }

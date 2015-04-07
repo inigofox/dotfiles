@@ -10,35 +10,46 @@
 			],
 			"env":
 			{
-				"PYTHONPATH": "/Users/drodriguez/code/dsb"
+				"PYTHONPATH": "/Users/drodriguez/code/conda-cluster"
 			},
 			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-			"name": "dsb",
-			"path": "/Users/drodriguez/anaconda/envs/conda-cluster/bin:$PATH",
+			"name": "conda-cluster",
+			"path": "/Users/drodriguez/anaconda/envs/cc/bin:$PATH",
+			"selector": "source.python"
+		},
+		{
+			"cmd":
+			[
+				"py.test",
+				"$file",
+				"-v",
+				"-s"
+			],
+			"env":
+			{
+				"PYTHONPATH": "/Users/drodriguez/code/conda-cluster"
+			},
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "conda-cluster py.test",
+			"path": "/Users/drodriguez/anaconda/envs/cc/bin:$PATH",
 			"selector": "source.python"
 		}
 	],
 	"folders":
 	[
 		{
-			"follow_symlinks": true,
+			"folder_exclude_patterns":
+			[
+				".*",
+				"*.egg*"
+			],
 			"path": "/Users/drodriguez/code/conda-cluster"
 		},
 		{
-			"follow_symlinks": true,
+			"path": "/Users/drodriguez/code/cc-utils"
+		},
+		{
 			"path": "/Users/drodriguez/.conda-cluster"
-		},
-		{
-			"follow_symlinks": true,
-			"path": "/Users/drodriguez/code/conda-cluster-utils"
-		},
-		{
-			"follow_symlinks": true,
-			"path": "/Users/drodriguez/code/datasciencebox"
-		},
-		{
-			"follow_symlinks": true,
-			"path": "/Users/drodriguez/.datasciencebox"
 		}
 	]
 }

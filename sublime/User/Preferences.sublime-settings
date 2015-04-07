@@ -1,7 +1,8 @@
 {
 	"caret_extra_width": 1,
 	"caret_style": "phase",
-	"color_scheme": "Packages/User/Light Table Soda Minimal.tmTheme",
+	"close_windows_when_empty": true,
+	"color_scheme": "Packages/Theme - Afterglow/Afterglow.tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Inconsolata",
 	"font_size": 18,
@@ -15,7 +16,8 @@
 		100
 	],
 	"save_on_focus_lost": true,
-	"theme": "Soda Dark 3.sublime-theme",
+	"tabs_small": true,
+	"theme": "Afterglow.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }

@@ -1,0 +1,43 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"python",
+				"-u",
+				"$file"
+			],
+			"env":
+			{
+				"PYTHONPATH": "/Users/drodriguez/code/datasciencebox"
+			},
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "dsb",
+			"path": "/Users/drodriguez/anaconda/envs/dsb/bin:$PATH",
+			"selector": "source.python"
+		},
+		{
+			"cmd":
+			[
+				"py.test",
+				"/Users/drodriguez/code/datasciencebox/tests/test_provider.py",
+				"-s"
+			],
+			"env":
+			{
+				"PYTHONPATH": "/Users/drodriguez/code/datasciencebox"
+			},
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "dsb-test",
+			"path": "/Users/drodriguez/anaconda/envs/dsb/bin:$PATH",
+			"selector": "source.python"
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "/Users/drodriguez/code/datasciencebox"
+		}
+	]
+}
