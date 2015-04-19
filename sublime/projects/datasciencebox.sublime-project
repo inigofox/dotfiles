@@ -15,7 +15,8 @@
 			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 			"name": "dsb",
 			"path": "/Users/drodriguez/anaconda/envs/dsb/bin:$PATH",
-			"selector": "source.python"
+			"selector": "source.python",
+			"working_dir": "/Users/drodriguez/code/datasciencebox"
 		},
 		{
 			"cmd":
@@ -29,7 +30,7 @@
 				"PYTHONPATH": "/Users/drodriguez/code/datasciencebox"
 			},
 			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-			"name": "dsb-test",
+			"name": "dsb py.test",
 			"path": "/Users/drodriguez/anaconda/envs/dsb/bin:$PATH",
 			"selector": "source.python"
 		}
@@ -37,7 +38,21 @@
 	"folders":
 	[
 		{
+			"folder_exclude_patterns":
+			[
+				"__pycache__",
+				"*.egg*"
+			],
 			"path": "/Users/drodriguez/code/datasciencebox"
+		},
+		{
+			"path": "/Users/drodriguez/code/ipython-mesos"
+		},
+		{
+			"path": "/Users/drodriguez/code/mesos"
+		},
+		{
+			"path": "/usr/local/lib/python2.7/site-packages"
 		}
 	]
 }

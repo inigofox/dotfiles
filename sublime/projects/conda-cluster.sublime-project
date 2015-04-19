@@ -40,7 +40,7 @@
 		{
 			"folder_exclude_patterns":
 			[
-				".*",
+				"__pycache__",
 				"*.egg*"
 			],
 			"path": "/Users/drodriguez/code/conda-cluster"

@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"path": "/Users/drodriguez/code/word2vec",
+            "folder_exclude_patterns":
+            [
+                "__pycache__",
+                "*.egg*"
+            ],
+		}
+	]
+}
