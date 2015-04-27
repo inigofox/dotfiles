@@ -2,6 +2,11 @@
 	"folders":
 	[
 		{
+            "folder_exclude_patterns":
+            [
+                "__pycache__",
+                "cache"
+            ],
 			"path": "/Users/drodriguez/code/blog"
 		}
 	]

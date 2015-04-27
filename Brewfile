@@ -10,6 +10,7 @@ brew 'wget'
 brew 'zsh'
 brew 'git'
 brew 'boot2docker'
+brew 'python'
 brew 'autoenv'
 
 tap 'caskroom/cask'

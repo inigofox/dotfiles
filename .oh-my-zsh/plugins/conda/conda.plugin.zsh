@@ -1,4 +1,5 @@
 export PATH=$HOME/anaconda/bin:$PATH
+alias ccc=conda-cluster
 
 conda_root_dir() {
     conda_root=$(conda info | grep root | awk 'BEGIN { FS = " " } ; { print $4 }' | sed 's/^[ \t]*//;s/[ \t]*$//')
