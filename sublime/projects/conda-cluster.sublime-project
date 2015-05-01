@@ -47,6 +47,9 @@
 		},
 		{
 			"path": "/Users/drodriguez/.conda-cluster"
+		},
+		{
+			"path": "/Users/drodriguez/code/cluster-cli"
 		}
 	]
 }

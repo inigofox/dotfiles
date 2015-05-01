@@ -27,6 +27,7 @@ cask 'evernote'
 cask 'spotify'
 cask 'spotifree'
 cask 'keyboard-maestro'
+cask 'clipmenu'
 cask 'keka'
 
 cask 'silverlight'
