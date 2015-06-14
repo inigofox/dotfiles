@@ -14,7 +14,7 @@
 			},
 			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
 			"name": "conda-cluster",
-			"path": "/Users/drodriguez/anaconda/envs/cc/bin:$PATH",
+			"path": "/Users/drodriguez/anaconda/envs/conda-cluster/bin:$PATH",
 			"selector": "source.python"
 		},
 		{
@@ -33,23 +33,22 @@
 			"name": "conda-cluster py.test",
 			"path": "/Users/drodriguez/anaconda/envs/cc/bin:$PATH",
 			"selector": "source.python"
+		},
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "Anaconda Python Builder",
+			"selector": "source.python",
+			"shell_cmd": "python -u \"$file\""
 		}
 	],
 	"folders":
 	[
 		{
-			"folder_exclude_patterns":
-			[
-				"__pycache__",
-				"*.egg*"
-			],
-			"path": "/Users/drodriguez/code/conda-cluster"
+			"path": "/Users/drodriguez/code/anaconda-cluster"
 		},
 		{
-			"path": "/Users/drodriguez/.conda-cluster"
-		},
-		{
-			"path": "/Users/drodriguez/code/cluster-cli"
+			"path": "/Users/drodriguez/.acluster"
 		}
-	]
+	],
+	"python_interpreter": "/Users/drodriguez/anaconda/envs/conda-cluster/bin/python"
 }

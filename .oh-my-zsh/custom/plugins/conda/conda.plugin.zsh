@@ -1,3 +1,5 @@
+# if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+
 export PATH=$HOME/anaconda/bin:$PATH
 alias ccc=conda-cluster
 
@@ -38,7 +40,7 @@ workon() {
 }
 compdef _complete_conda_envs workon
 
-# workoff() {
-#     conda_root_dir
-#     source $conda_root/bin/deactivate
-# }
+workoff() {
+    conda_root_dir
+    source $conda_root/bin/deactivate
+}

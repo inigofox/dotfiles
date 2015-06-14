@@ -1,4 +1,13 @@
 {
+	"build_systems":
+	[
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "Anaconda Python Builder",
+			"selector": "source.python",
+			"shell_cmd": "python -u \"$file\""
+		}
+	],
 	"folders":
 	[
 		{
@@ -10,9 +19,12 @@
 			"path": "/Users/drodriguez/.oh-my-zsh"
 		},
 		{
+			"folder_include_patterns":
+			[
+				".*"
+			],
 			"follow_symlinks": true,
-			"path": "/Users/drodriguez",
-			"folder_include_patterns": [".*"]
+			"path": "/Users/drodriguez"
 		}
 	]
 }
