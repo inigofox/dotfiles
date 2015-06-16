@@ -32,6 +32,7 @@ cask 'keka'
 
 cask 'silverlight'
 
+cask ‘atom’
 cask 'iterm2'
 cask 'vagrant'
 cask 'virtualbox'
