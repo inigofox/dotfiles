@@ -24,3 +24,8 @@ Now can clone the repo: `git clone git@github.com:danielfrg/dotfiles.git`
 
 1. Install brew bundle: `brew tap Homebrew/brewdler`
 2. Install brew packages: `brew brewdle`
+
+## VI
+
+1. `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+2. `vim +PluginInstall +qall`
