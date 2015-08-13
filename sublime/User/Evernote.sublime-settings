@@ -1,9 +1,0 @@
-{
-	"token": "",
-    "noteStoreUrl": "https://www.evernote.com/shard/s16/notestore",
-    "update_on_save": "true",
-    "code_highlighting_style": "monokai",
-    "inline_css": {
-        "pre": "border-radius: 0px; white-space: pre-wrap; word-wrap: break-word; overflow: auto; padding: 6px 10px; margin-bottom: 10px;",
-    }
-}

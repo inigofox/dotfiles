@@ -1,0 +1,27 @@
+"anaconda-cluster":
+  title: "anaconda-cluster"
+  paths: [
+    "/Users/drodriguez/workspace/anaconda-cluster"
+    "/Users/drodriguez/.acluster"
+  ]
+"datasciencebox":
+  title: "datasciencebox"
+  paths: [
+    "/Users/drodriguez/workspace/datasciencebox"
+  ]
+"blog":
+  title: "blog"
+  paths: [
+    "/Users/drodriguez/workspace/blog"
+  ]
+"dotfiles":
+  title: "dotfiles"
+  paths: [
+    "/Users/drodriguez/workspace/dotfiles"
+    "/Users/drodriguez"
+  ]
+"word2vec":
+  title: "word2vec"
+  paths: [
+    "/Users/drodriguez/workspace/word2vec"
+  ]
