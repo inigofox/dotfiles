@@ -32,6 +32,9 @@ Bundle 'https://github.com/plasticboy/vim-markdown.git'
 " full path fuzzy search
 Bundle 'kien/ctrlp.vim'
 
+" full path fuzzy search
+Bundle 'python.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " " Enable filetype plugins (required)
@@ -49,6 +52,10 @@ map <C-n> :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""
 " General
 """"""""""""""""""""""""""""""
+" Color scheme
+colorscheme base16-tomorrow
+let base16colorspace=256 " Fix for green line numbers
+
 " Sets how many lines of history VIM has to remember
 set history=700
 
