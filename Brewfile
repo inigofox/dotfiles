@@ -9,7 +9,8 @@ brew 'gnu-sed', args: ['with-default-names']
 brew 'wget'
 brew 'zsh'
 brew 'git'
-brew 'boot2docker'
+brew 'docker'
+brew 'docker-machine'
 brew 'python'
 brew 'autoenv'
 
