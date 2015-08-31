@@ -1,4 +1,4 @@
-# dotfiles + mac configuration
+# dotfiles + OS X configuration
 
 ## 1. Homebrew
 
@@ -23,7 +23,13 @@ Now can clone the repo: `git clone git@github.com:danielfrg/dotfiles.git`
 ## 3. Brew apps
 
 1. Install brew bundle: `brew tap Homebrew/brewdler`
-2. Install brew packages: `brew brewdle`
+2. Install brew packages: `brew bundle`
+
+## Ohmyzsh
+
+```
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
 
 ## VI
 

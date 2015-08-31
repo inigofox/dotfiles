@@ -10,14 +10,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ###############################################################################
 # General UI/UX #
-###############################################################################
-
-for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
-	defaults write "${domain}" dontAutoLoad -array \
-		"/System/Library/CoreServices/Menu Extras/TimeMachine.menu" \
-		"/System/Library/CoreServices/Menu Extras/Volume.menu" \
-		"/System/Library/CoreServices/Menu Extras/User.menu"
-done
+###############################################################################S
 
 # Menu bar: Hide
 for domain in ~/Library/Preferences/ByHost/com.apple.systemuiserver.*; do
@@ -45,12 +38,11 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode2 -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -bool true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 
+# Save to disk (not to iCloud) by default
+defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
+
 # Automatically quit printer app once the print jobs complete
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
-
-# Reveal IP address, hostname, OS version, etc. when clicking the clock
-# in the login window
-defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo HostName
 
 # Disable the “Are you sure you want to open this application?” dialog
 defaults write com.apple.LaunchServices LSQuarantine -bool false
@@ -63,6 +55,12 @@ launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.
 
 # Never go into computer sleep mode
 systemsetup -setcomputersleep Off > /dev/null
+
+# Disable smart quotes as they’re annoying when typing code
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+
+# Disable smart dashes as they’re annoying when typing code
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input #
@@ -79,8 +77,12 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightC
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.trackpadCornerClickBehavior -int 1
 defaults -currentHost write NSGlobalDomain com.apple.trackpad.enableSecondaryClick -bool true
 
-# Screen: Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
-defaults write com.apple.screencapture type -string "png"
+# Enable “natural” (Lion-style) scrolling
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool true
+
+# Enable full keyboard access for all controls
+# (e.g. enable Tab in modal dialogs)
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Increase sound quality for Bluetooth headphones/headsets
 defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
@@ -89,7 +91,7 @@ defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int
 # (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-# Set a blazingly fast keyboard repeat rate
+# Set a faster keyboard repeat rate
 defaults write NSGlobalDomain KeyRepeat -int 3
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
@@ -102,6 +104,32 @@ defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 # Disable press-and-hold for keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
+# Set language and text formats
+# Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
+# `Inches`, `en_GB` with `en_US`, and `true` with `false`.
+defaults write NSGlobalDomain AppleLanguages -array "en" "nl"
+defaults write NSGlobalDomain AppleLocale -string "en_GB@currency=USD"
+defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
+defaults write NSGlobalDomain AppleMetricUnits -bool true
+
+# Remap Capslock to Command
+# Complete List of codes:
+# 0 caps lock
+# 1 left shift
+# 2 left control
+# 3 left option
+# 4 left command
+# 5 keypad 0
+# 6 help
+# 9 right shift
+# 10 right control
+# 11 right option
+# 12 right command
+
+ioreg -rn IOHIDKeyboard | grep -E 'VendorID"|ProductID' | awk '{ print $4 }' | paste -s -d'-\n' - | while read kid; do
+  defaults -currentHost write -g com.apple.keyboard.modifiermapping.${kid}-0 -array '<dict><key>HIDKeyboardModifierMappingDst</key><integer>4</integer><key>HIDKeyboardModifierMappingSrc</key><integer>0</integer></dict>'
+done
+
 ###############################################################################
 # Screen #
 ###############################################################################
@@ -109,6 +137,12 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 # Require password immediately after sleep or screen saver begins
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
+
+# Save screenshots to ~/Downloads
+defaults write com.apple.screencapture location -string "${HOME}/Downloads"
+
+# Screen: Save screenshots in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
+defaults write com.apple.screencapture type -string "png"
 
 ###############################################################################
 # Finder #
@@ -139,7 +173,7 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Use column view in all Finder windows by default
-# Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
+# Four-letter codes for the view modes: `icnv`, `clmv`, `Flwv`
 defaults write com.apple.finder FXPreferredViewStyle -string "clmv"
 
 # Disable the warning before emptying the Trash
@@ -148,8 +182,9 @@ defaults write com.apple.finder WarnOnEmptyTrash -bool false
 # Empty Trash securely by default
 defaults write com.apple.finder EmptyTrashSecurely -bool true
 
-# Show the ~/Library folder
+# Show the some hidden folder
 chflags nohidden ~/Library
+chflags nohidden ~/.ssh
 
 ###############################################################################
 # Dock, Dashboard, and hot corners #
@@ -158,7 +193,7 @@ chflags nohidden ~/Library
 # Automatically hide and show the Dock
 defaults write com.apple.dock autohide -bool true
 
-# Set the icon size of Dock items to 36 pixels
+# Set the icon size of Dock items to xx number of pixels
 defaults write com.apple.dock tilesize -int 60
 
 # Change minimize/maximize window effect
@@ -190,7 +225,7 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 # Transmission.app #
 ###############################################################################
 
-# Use `~/Documents/Torrents` to store incomplete downloads
+# Use `~/Documents/Downloads` to store incomplete downloads
 defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
 defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Downloads"
 
