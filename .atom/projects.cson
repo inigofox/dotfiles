@@ -9,6 +9,7 @@
   paths: [
     "/Users/drodriguez/workspace/datasciencebox"
   ]
+  settings: {"linter-pylint": {"executable": "/Users/drodriguez/anaconda/envs/dsb-dev/bin/pylint"}}
 "blog":
   title: "blog"
   paths: [
@@ -24,4 +25,9 @@
   title: "word2vec"
   paths: [
     "/Users/drodriguez/workspace/word2vec"
+  ]
+"tsne":
+  title: "tsne"
+  paths: [
+    "/Users/drodriguez/workspace/tsne"
   ]

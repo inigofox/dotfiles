@@ -1,4 +1,4 @@
-# Add to .zshrc:
+# Add to $PATH
 # export PATH=$(brew --prefix coreutils)/libexec/bin:$PATH
 # export PATH=$(brew --prefix moreutils)/libexec/bin:$PATH
 brew 'coreutils'
@@ -9,11 +9,14 @@ brew 'gnu-sed', args: ['with-default-names']
 brew 'wget'
 brew 'zsh'
 brew 'git'
+
 brew 'docker'
 brew 'docker-machine'
+
 brew 'python'
 brew 'autoenv'
 brew 'thefuck'
+brew 'unp'
 
 tap 'caskroom/cask'
 tap 'caskroom/versions'
