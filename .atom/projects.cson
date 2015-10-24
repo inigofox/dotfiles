@@ -31,3 +31,8 @@
   paths: [
     "/Users/drodriguez/workspace/tsne"
   ]
+ "atom-nbviewer":
+  title: "atom-nbviewer"
+  paths: [
+    "/Users/drodriguez/workspace/atom-nbviewer"
+  ]
