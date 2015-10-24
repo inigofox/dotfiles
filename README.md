@@ -6,6 +6,7 @@
 
 ## 2. Clone repo
 
+
 Create [ssh key](https://help.github.com/articles/generating-ssh-keys):
 
 ```
@@ -31,7 +32,11 @@ Now can clone the repo: `git clone git@github.com:danielfrg/dotfiles.git`
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
+Copy `.zshrc` to `~/.zshrc` and the plugins to `~/.oh-my-zsh`
+
 ## VI
+
+Copy `.vim` to `~/.vim` and `.vimrc` to `~/.vimrc`
 
 1. `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 2. `vim +PluginInstall +qall`
