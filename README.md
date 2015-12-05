@@ -33,15 +33,23 @@ Install: `brew bundle`
 ```
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-ln -s $(pwd)/.zshrc ~/.zshrc
-ln -s $(pwd)/.oh-my-zsh/custom/plugins ~/.oh-my-zsh/custom
+ln -sf $(pwd)/.zshrc ~/.zshrc
+ln -sF $(pwd)/.oh-my-zsh/custom/plugins ~/.oh-my-zsh/custom
 ```
 
 ### Git
 
 ```
-cp .gitconfig ~/
-cp .gitignore_global ~/
+ln -sf $(pwd)/.gitconfig ~/.gitconfig
+ln -sf $(pwd)/.gitignore_global ~/.gitignore_global
+```
+
+### Atom
+
+```
+bash atom/plugins.sh
+
+ln -sf $(pwd)/atom/projects.cson ~/.atom/projects.cson
 ```
 
 ### VI
