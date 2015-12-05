@@ -21,10 +21,9 @@ pbcopy < ~/.ssh/id_rsa.pub
 
 Now can clone the repo: `git clone git@github.com:danielfrg/dotfiles.git`
 
-## 3. Brew apps
+## 3. Brew packages
 
-1. Install brew bundle: `brew tap Homebrew/brewdler`
-2. Install brew packages: `brew bundle`
+Install: `brew bundle`
 
 ## Ohmyzsh
 
