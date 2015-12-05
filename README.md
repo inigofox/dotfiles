@@ -29,9 +29,7 @@ Install: `brew bundle`
 
 ```
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-```
 
-```
 ln -s $(pwd)/.zshrc ~/.zshrc
 ln -s $(pwd)/.oh-my-zsh/custom/plugins ~/.oh-my-zsh/custom
 ```
