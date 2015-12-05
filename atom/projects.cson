@@ -1,53 +1,53 @@
 "anaconda-cluster":
   title: "anaconda-cluster"
   paths: [
-    "/Users/drodriguez/workspace/anaconda-cluster"
-    "/Users/drodriguez/.acluster"
+    "/Users/danielfrg/workspace/anaconda-cluster"
+    "/Users/danielfrg/.acluster"
   ]
   settings:
     "linter-pylint":
-      executable: "/Users/drodriguez/anaconda/envs/anaconda-cluster-dev/bin/pylint"
+      executable: "/Users/danielfrg/anaconda/envs/anaconda-cluster-dev/bin/pylint"
 datasciencebox:
   title: "datasciencebox"
   paths: [
-    "/Users/drodriguez/workspace/datasciencebox"
+    "/Users/danielfrg/workspace/datasciencebox"
   ]
   settings:
     "linter-pylint":
-      executable: "/Users/drodriguez/anaconda/envs/dsb-dev/bin/pylint"
+      executable: "/Users/danielfrg/anaconda/envs/dsb-dev/bin/pylint"
 blog:
   title: "blog"
   paths: [
-    "/Users/drodriguez/workspace/blog"
+    "/Users/danielfrg/workspace/blog"
   ]
 dotfiles:
   title: "dotfiles"
   paths: [
-    "/Users/drodriguez/workspace/dotfiles"
-    "/Users/drodriguez"
+    "/Users/danielfrg/workspace/dotfiles"
+    "/Users/danielfrg"
   ]
 word2vec:
   title: "word2vec"
   paths: [
-    "/Users/drodriguez/workspace/word2vec"
+    "/Users/danielfrg/workspace/word2vec"
   ]
 tsne:
   title: "tsne"
   paths: [
-    "/Users/drodriguez/workspace/tsne"
+    "/Users/danielfrg/workspace/tsne"
   ]
 "atom-nbviewer":
   title: "atom-nbviewer"
   paths: [
-    "/Users/drodriguez/workspace/atom-nbviewer"
+    "/Users/danielfrg/workspace/atom-nbviewer"
   ]
 "remote-pip":
   title: "remote-pip"
   paths: [
-    "/Users/drodriguez/workspace/remote-pip"
+    "/Users/danielfrg/workspace/remote-pip"
   ]
 "remote-conda":
   title: "remote-conda"
   paths: [
-    "/Users/drodriguez/workspace/remote-conda"
+    "/Users/danielfrg/workspace/remote-conda"
   ]
