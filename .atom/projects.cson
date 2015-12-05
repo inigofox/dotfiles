@@ -4,35 +4,50 @@
     "/Users/drodriguez/workspace/anaconda-cluster"
     "/Users/drodriguez/.acluster"
   ]
-"datasciencebox":
+  settings:
+    "linter-pylint":
+      executable: "/Users/drodriguez/anaconda/envs/anaconda-cluster-dev/bin/pylint"
+datasciencebox:
   title: "datasciencebox"
   paths: [
     "/Users/drodriguez/workspace/datasciencebox"
   ]
-  settings: {"linter-pylint": {"executable": "/Users/drodriguez/anaconda/envs/dsb-dev/bin/pylint"}}
-"blog":
+  settings:
+    "linter-pylint":
+      executable: "/Users/drodriguez/anaconda/envs/dsb-dev/bin/pylint"
+blog:
   title: "blog"
   paths: [
     "/Users/drodriguez/workspace/blog"
   ]
-"dotfiles":
+dotfiles:
   title: "dotfiles"
   paths: [
     "/Users/drodriguez/workspace/dotfiles"
     "/Users/drodriguez"
   ]
-"word2vec":
+word2vec:
   title: "word2vec"
   paths: [
     "/Users/drodriguez/workspace/word2vec"
   ]
-"tsne":
+tsne:
   title: "tsne"
   paths: [
     "/Users/drodriguez/workspace/tsne"
   ]
- "atom-nbviewer":
+"atom-nbviewer":
   title: "atom-nbviewer"
   paths: [
     "/Users/drodriguez/workspace/atom-nbviewer"
+  ]
+"remote-pip":
+  title: "remote-pip"
+  paths: [
+    "/Users/drodriguez/workspace/remote-pip"
+  ]
+"remote-conda":
+  title: "remote-conda"
+  paths: [
+    "/Users/drodriguez/workspace/remote-conda"
   ]
