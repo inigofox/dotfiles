@@ -153,7 +153,7 @@ defaults write com.apple.screencapture type -string "png"
 
 # Set HOME as the default location for new Finder windows
 defaults write com.apple.finder NewWindowTarget -string "PfLo"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/"
+defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/workspace"
 
 # Finder: Don't show status bar
 defaults write com.apple.finder ShowStatusBar -bool false

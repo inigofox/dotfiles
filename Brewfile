@@ -13,6 +13,7 @@ brew 'git'
 brew 'docker'
 brew 'docker-machine'
 
+brew 'go'
 brew 'python'
 brew 'autoenv'
 brew 'thefuck'
