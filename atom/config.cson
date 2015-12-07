@@ -1,0 +1,17 @@
+"*":
+  "exception-reporting":
+    userId: "31fb4b32-093c-7478-de1a-ab36924e609e"
+  welcome:
+    showOnStartup: false
+  core: {}
+  editor:
+    invisibles: {}
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
+    showOnRightSide: true
+    squashDirectoryNames: true
+  "linter-pylint":
+    executable: "/Users/danielfrg/anaconda/bin/pylint"
+  linter:
+    showErrorPanel: false

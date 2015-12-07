@@ -50,6 +50,7 @@ ln -sf $(pwd)/.gitignore_global ~/.gitignore_global
 bash atom/plugins.sh
 
 ln -sf $(pwd)/atom/projects.cson ~/.atom/projects.cson
+ln -sf $(pwd)/atom/config.cson ~/.atom/config.cson
 ```
 
 ### VI
