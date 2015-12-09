@@ -33,6 +33,7 @@ cask 'evernote'
 cask 'keyboard-maestro'
 cask 'clipmenu'
 cask 'keka'
+cask 'osxfuse'
 
 cask 'silverlight'
 
@@ -41,3 +42,6 @@ cask 'iterm2'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'sourcetree'
+
+
+brew 'homebrew/fuse/ntfs-3g'

@@ -12,6 +12,6 @@
     showOnRightSide: true
     squashDirectoryNames: true
   "linter-pylint":
-    executable: "/Users/danielfrg/anaconda/bin/pylint"
+    executable: "/Users/danielfrg/anaconda/envs/anaconda-cluster-dev/bin/pylint"
   linter:
     showErrorPanel: false
