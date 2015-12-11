@@ -1,4 +1,4 @@
-# dotfiles + OS X configuration
+# dotfiles
 
 ## Basic
 
@@ -55,7 +55,10 @@ ln -sf $(pwd)/atom/config.cson ~/.atom/config.cson
 
 ### VI
 
-Copy `.vim` to `~/.vim` and `.vimrc` to `~/.vimrc`
+```
+ln -sF $(pwd)/.vim ~/.vim
+ln -sf $(pwd)/.vimrc ~/.vimrc
 
-1. `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
-2. `vim +PluginInstall +qall`
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
+```
