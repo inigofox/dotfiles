@@ -47,10 +47,12 @@ ln -sf $(pwd)/.gitignore_global ~/.gitignore_global
 ### Atom
 
 ```
-bash atom/plugins.sh
+bash .atom/plugins.sh
 
-ln -sf $(pwd)/atom/projects.cson ~/.atom/projects.cson
-ln -sf $(pwd)/atom/config.cson ~/.atom/config.cson
+ln -sf $(pwd)/.atom/projects.cson ~/.atom/projects.cson
+ln -sf $(pwd)/.atom/config.cson ~/.atom/config.cson
+ln -sf $(pwd)/.atom/init.coffee ~/.atom/init.coffee
+ln -sf $(pwd)/.atom/keymap.cson ~/.atom/keymap.cson
 ```
 
 ### VI

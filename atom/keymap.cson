@@ -1,0 +1,5 @@
+'atom-text-editor.vim-mode.insert-mode':
+  'k': 'exit-insert-mode-if-preceded-by-j'
+
+'atom-text-editor.vim-mode:not(.insert-mode)':
+  '0': 'vim-mode:move-to-first-character-of-line'
