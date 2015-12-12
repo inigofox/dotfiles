@@ -129,9 +129,6 @@ Plugin 'VundleVim/Vundle.vim'
 " very nice file browser
 Bundle 'scrooloose/nerdtree'
 
-" some markdown support
-Bundle 'https://github.com/plasticboy/vim-markdown.git'
-
 " full path fuzzy search
 Bundle 'kien/ctrlp.vim'
 
