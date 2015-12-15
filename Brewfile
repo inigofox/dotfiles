@@ -29,11 +29,9 @@ cask '1password'
 cask 'vlc'
 cask 'dropbox'
 cask 'transmission'
-cask 'evernote'
 cask 'keyboard-maestro'
 cask 'clipmenu'
 cask 'keka'
-cask 'osxfuse'
 
 cask 'silverlight'
 
@@ -43,5 +41,5 @@ cask 'vagrant'
 cask 'virtualbox'
 cask 'sourcetree'
 
+cask 'osxfuse'
 brew 'homebrew/fuse/ntfs-3g'
-

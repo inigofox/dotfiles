@@ -51,3 +51,11 @@ tsne:
   paths: [
     "/Users/danielfrg/workspace/remote-conda"
   ]
+"docker-conda-channel":
+  title: "docker-conda-channel"
+  paths: [
+    "/Users/danielfrg/workspace/docker-conda-channel"
+  ]
+  # settings:
+  #   "linter-pylint":
+  #     executable: "/Users/danielfrg/anaconda/envs/repodata-dev/bin/pylint"

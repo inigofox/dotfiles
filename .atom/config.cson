@@ -3,14 +3,18 @@
     userId: "31fb4b32-093c-7478-de1a-ab36924e609e"
   welcome:
     showOnStartup: false
-  core: {}
+  core:
+    ignoredNames: [
+      ".DS_Store"
+      ".git"
+      "*.pyc"
+    ]
   editor:
     invisibles: {}
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
-    showOnRightSide: true
     squashDirectoryNames: true
+    showOnRightSide: true
   "linter-pylint":
     executable: "/Users/danielfrg/anaconda/envs/anaconda-cluster-dev/bin/pylint"
   linter:
