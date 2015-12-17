@@ -47,7 +47,7 @@ ln -sf $(pwd)/.gitignore_global ~/.gitignore_global
 ### Atom
 
 ```
-bash .atom/plugins.sh
+bash .atom/packages.sh
 
 ln -sf $(pwd)/.atom/projects.cson ~/.atom/projects.cson
 ln -sf $(pwd)/.atom/config.cson ~/.atom/config.cson
