@@ -8,9 +8,17 @@
       ".DS_Store"
       ".git"
       "*.pyc"
+      "*.egg-info"
+    ]
+    themes: [
+      "one-dark-ui"
+      "LightTable-syntax"
     ]
   editor:
     invisibles: {}
+    fontFamily: "Hack"
+    showIndentGuide: true
+    fontSize: 15
   "tree-view":
     hideIgnoredNames: true
     squashDirectoryNames: true

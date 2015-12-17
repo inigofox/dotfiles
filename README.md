@@ -53,6 +53,13 @@ ln -sf $(pwd)/.atom/projects.cson ~/.atom/projects.cson
 ln -sf $(pwd)/.atom/config.cson ~/.atom/config.cson
 ln -sf $(pwd)/.atom/init.coffee ~/.atom/init.coffee
 ln -sf $(pwd)/.atom/keymap.cson ~/.atom/keymap.cson
+
+# My packages:
+git clone git@github.com:danielfrg/atom-nbviewer.git ~/workspace/atom-nbviewer
+ln -sF ~/workspace/atom-nbviewer ~/.atom/packages/nbviewer
+
+git clone git@github.com:danielfrg/atom-lighttable-syntax.git ~/workspace/atom-lighttable-syntax
+ln -sF ~/workspace/atom-lighttable-syntax ~/.atom/packages/lighttable-syntax
 ```
 
 ### VI
