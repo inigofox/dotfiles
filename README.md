@@ -56,6 +56,9 @@ ln -sf $(pwd)/.atom/keymap.cson ~/.atom/keymap.cson
 
 # My packages:
 git clone git@github.com:danielfrg/atom-nbviewer.git ~/workspace/atom-nbviewer
+pushd ~/workspace/atom-nbviewer
+apm install
+popd
 ln -sF ~/workspace/atom-nbviewer ~/.atom/packages/nbviewer
 
 git clone git@github.com:danielfrg/atom-lighttable-syntax.git ~/workspace/atom-lighttable-syntax
