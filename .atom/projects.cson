@@ -51,6 +51,8 @@
   title: "atom-lighttable-syntax"
   paths: [
     "/Users/danielfrg/workspace/atom-lighttable-syntax"
+    "/Users/danielfrg/workspace/datasciencebox"
+    "/Users/danielfrg/workspace/remote-conda"
   ]
 
 "docker-conda-channel":

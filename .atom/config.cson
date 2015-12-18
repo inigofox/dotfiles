@@ -27,5 +27,5 @@
     executable: "/Users/danielfrg/anaconda/envs/anaconda-cluster-dev/bin/pylint"
   linter:
     showErrorPanel: false
-  "nbviewer":
-    "jupyterConvertBin": "/Users/danielfrg/anaconda/bin/jupyter-nbconvert"
+  nbviewer:
+    jupyterConvertBin: "/Users/danielfrg/anaconda/bin/jupyter-nbconvert"

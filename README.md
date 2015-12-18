@@ -53,7 +53,8 @@ ln -sf $(pwd)/.atom/projects.cson ~/.atom/projects.cson
 ln -sf $(pwd)/.atom/config.cson ~/.atom/config.cson
 ln -sf $(pwd)/.atom/init.coffee ~/.atom/init.coffee
 ln -sf $(pwd)/.atom/keymap.cson ~/.atom/keymap.cson
-
+ln -sf $(pwd)/.atom/styles.less ~/.atom/styles.less
+ln -sf $(pwd)/.atom/snippets.cson ~/.atom/snippets.cson
 # My packages:
 git clone git@github.com:danielfrg/atom-nbviewer.git ~/workspace/atom-nbviewer
 pushd ~/workspace/atom-nbviewer
