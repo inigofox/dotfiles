@@ -29,3 +29,5 @@
     showErrorPanel: false
   nbviewer:
     jupyterConvertBin: "/Users/danielfrg/anaconda/bin/jupyter-nbconvert"
+  autosave:
+    enabled: true

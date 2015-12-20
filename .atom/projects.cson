@@ -55,9 +55,14 @@
     "/Users/danielfrg/workspace/remote-conda"
     "/Users/danielfrg/workspace/docker-conda-channel"
   ]
-
 "docker-conda-channel":
   title: "docker-conda-channel"
   paths: [
     "/Users/danielfrg/workspace/docker-conda-channel"
+  ]
+"libhdfs3":
+  title: "libhdfs3"
+  paths: [
+    "/Users/danielfrg/workspace/libhdfs3.py"
+    "/Users/danielfrg/workspace/libhdfs3"
   ]
