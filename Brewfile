@@ -32,7 +32,7 @@ cask 'transmission'
 cask 'keyboard-maestro'
 cask 'clipmenu'
 cask 'keka'
-
+cask 'spotify'
 cask 'silverlight'
 
 cask 'atom'
@@ -40,6 +40,7 @@ cask 'iterm2'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'sourcetree'
+cask 'dash'
 
 cask 'osxfuse'
 brew 'homebrew/fuse/ntfs-3g'
