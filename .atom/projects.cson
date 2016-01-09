@@ -63,7 +63,8 @@
 "libhdfs3":
   title: "libhdfs3"
   paths: [
-    "/Users/danielfrg/workspace/cylibhdfs3"
+    "/Users/danielfrg/workspace/cyhdfs3"
+    "/Users/danielfrg/workspace/cyavro"
     "/Users/danielfrg/workspace/libhdfs3"
-    "/Users/danielfrg/workspace/hdfs3-ctypes"
+    "/Users/danielfrg/workspace/hdfs3"
   ]
