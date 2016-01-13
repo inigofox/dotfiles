@@ -3,6 +3,7 @@
   paths: [
     "/Users/danielfrg/workspace/anaconda-cluster"
     "/Users/danielfrg/.acluster"
+    "/Users/danielfrg/workspace/ec2hosts"
   ]
   settings:
     "linter-pylint":
@@ -41,7 +42,6 @@
   paths: [
     "/Users/danielfrg/workspace/remote-conda"
   ]
-
 "atom-nbviewer":
   title: "atom-nbviewer"
   paths: [
@@ -67,4 +67,5 @@
     "/Users/danielfrg/workspace/cyavro"
     "/Users/danielfrg/workspace/libhdfs3"
     "/Users/danielfrg/workspace/hdfs3"
+    "/Users/danielfrg/workspace/fastavro"
   ]
