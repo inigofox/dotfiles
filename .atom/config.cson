@@ -1,8 +1,8 @@
 "*":
-  "exception-reporting":
-    userId: "31fb4b32-093c-7478-de1a-ab36924e609e"
-  welcome:
-    showOnStartup: false
+  autosave:
+    enabled: true
+  "base16-syntax":
+    scheme: "Tomorrow"
   core:
     ignoredNames: [
       ".DS_Store"
@@ -11,23 +11,27 @@
     ]
     themes: [
       "one-dark-ui"
-      "LightTable-syntax"
+      "base16-tomorrow-dark-theme"
     ]
   editor:
-    invisibles: {}
     fontFamily: "Hack"
-    showIndentGuide: true
     fontSize: 15
+    invisibles: {}
+    showIndentGuide: true
     tabLength: 4
-  "tree-view":
-    hideIgnoredNames: true
-    squashDirectoryNames: true
-    showOnRightSide: true
-  "linter-pylint":
-    executable: "/Users/danielfrg/anaconda/envs/anaconda-cluster-dev/bin/pylint"
+  "exception-reporting":
+    userId: "31fb4b32-093c-7478-de1a-ab36924e609e"
   linter:
     showErrorPanel: false
+  "linter-pylint":
+    executable: "/Users/danielfrg/anaconda/envs/anaconda-cluster-dev/bin/pylint"
   nbviewer:
     jupyterConvertBin: "/Users/danielfrg/anaconda/bin/jupyter-nbconvert"
-  autosave:
-    enabled: true
+  "one-dark-ui":
+    layoutMode: "Spacious"
+  "tree-view":
+    hideIgnoredNames: true
+    showOnRightSide: true
+    squashDirectoryNames: true
+  welcome:
+    showOnStartup: false

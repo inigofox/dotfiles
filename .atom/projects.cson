@@ -8,7 +8,7 @@
   settings:
     "linter-pylint":
       executable: "/Users/danielfrg/anaconda/envs/anaconda-cluster-dev/bin/pylint"
-"datasciencebox":
+datasciencebox:
   title: "datasciencebox"
   paths: [
     "/Users/danielfrg/workspace/datasciencebox"
@@ -16,56 +16,32 @@
   settings:
     "linter-pylint":
       executable: "/Users/danielfrg/anaconda/envs/dsb-dev/bin/pylint"
-"blog":
+blog:
   title: "blog"
   paths: [
     "/Users/danielfrg/workspace/blog"
   ]
-"dotfiles":
+dotfiles:
   title: "dotfiles"
   paths: [
     "/Users/danielfrg/workspace/dotfiles"
     "/Users/danielfrg"
   ]
-"word2vec":
+word2vec:
   title: "word2vec"
   paths: [
     "/Users/danielfrg/workspace/word2vec"
-  ]
-"remote-pip":
-  title: "remote-pip"
-  paths: [
-    "/Users/danielfrg/workspace/remote-pip"
-  ]
-"remote-conda":
-  title: "remote-conda"
-  paths: [
-    "/Users/danielfrg/workspace/remote-conda"
   ]
 "atom-nbviewer":
   title: "atom-nbviewer"
   paths: [
     "/Users/danielfrg/workspace/atom-nbviewer"
   ]
-"atom-lighttable-syntax":
-  title: "atom-lighttable-syntax"
-  paths: [
-    "/Users/danielfrg/workspace/atom-lighttable-syntax"
-    "/Users/danielfrg/workspace/datasciencebox"
-    "/Users/danielfrg/workspace/remote-conda"
-    "/Users/danielfrg/workspace/docker-conda-channel"
-  ]
-"docker-conda-channel":
-  title: "docker-conda-channel"
-  paths: [
-    "/Users/danielfrg/workspace/docker-conda-channel"
-  ]
-"libhdfs3":
+libhdfs3:
   title: "libhdfs3"
   paths: [
     "/Users/danielfrg/workspace/cyhdfs3"
     "/Users/danielfrg/workspace/cyavro"
     "/Users/danielfrg/workspace/libhdfs3"
     "/Users/danielfrg/workspace/hdfs3"
-    "/Users/danielfrg/workspace/fastavro"
   ]

@@ -10,7 +10,7 @@ set autoread
 set autowrite
 
 " Color scheme
-colorscheme base16-tomorrow
+colorscheme base16-railscasts
 let base16colorspace=256 " Fix for green line numbers
 
 " Enable syntax highlighting

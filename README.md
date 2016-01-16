@@ -47,7 +47,7 @@ ln -sf $(pwd)/.gitignore_global ~/.gitignore_global
 
 ### Atom
 
-```
+```bash
 bash .atom/packages.sh
 
 ln -sf $(pwd)/.atom/projects.cson ~/.atom/projects.cson
@@ -63,8 +63,8 @@ apm install
 popd
 ln -sF ~/workspace/atom-nbviewer ~/.atom/packages/nbviewer
 
-git clone git@github.com:danielfrg/atom-lighttable-syntax.git ~/workspace/atom-lighttable-syntax
-ln -sF ~/workspace/atom-lighttable-syntax ~/.atom/packages/lighttable-syntax
+# git clone git@github.com:danielfrg/atom-lighttable-syntax.git ~/workspace/atom-lighttable-syntax
+# ln -sF ~/workspace/atom-lighttable-syntax ~/.atom/packages/lighttable-syntax
 ```
 
 ### VI
