@@ -1,0 +1,77 @@
+import os
+
+from xonsh import environ as xenviron
+
+# some customization options
+$MULTILINE_PROMPT = "`·.,¸,.·*¯`·.,¸,.·*¯"
+$XONSH_SHOW_TRACEBACK = True
+$XONSH_STORE_STDOUT = True
+
+# Fix base16 colors
+# bash "$HOME/workspace/dotfiles/iterm2/base16-tomorrow.dark.sh"
+bash "$HOME/workspace/dotfiles/iterm2/base16-railscasts.dark.sh"
+
+# Defaults
+$PATH.insert(0, "/usr/local/bin")
+$PATH.insert(0, "/Users/danielfrg/anaconda/bin")
+
+# PROMPT
+def _prompt():
+	p = ""
+	if __xonsh_env__["CONDA_DEFAULT_ENV"] is not None:
+		p += "({})".format($CONDA_DEFAULT_ENV)
+	p += " {BOLD_GREEN}{cwd}"
+	if xenviron.current_branch():
+		p += "{branch_color}{curr_branch} "
+	else:
+		p += " "
+	p += "{BOLD_BLUE}{prompt_end}{NO_COLOR} "
+	return p
+
+$PROMPT=lambda: _prompt()
+
+# CONDA
+$ANACONDA = "/Users/danielfrg/anaconda/"
+$CONDA_ENVS = "/Users/danielfrg/anaconda/envs"
+def _lsvirtualenvs(args, stdin=None):
+	return ($(ls "/Users/danielfrg/anaconda/envs"), None)
+
+def _workon(args, stdin=None):
+	if len(args) != 1:
+		print("Usage: workon envname\n"
+			"Deactivates previously activated Conda "
+			"environment, then activates the chosen one.")
+		return
+
+	if not args:
+		return "Provide conda environment\n", None
+
+	_deactivate([], stdin)
+
+	env_name = args[0]
+	env_path = os.path.join($CONDA_ENVS, env_name)
+	if not os.path.exists(env_path):
+		raise OSError("No such conda env: %s", env_path)
+
+	$CONDA_DEFAULT_ENV = env_name
+	$CONDA_ENV_PATH = os.path.join($CONDA_ENVS, $CONDA_DEFAULT_ENV)
+	$PATH.insert(0, os.path.join($CONDA_ENVS, $CONDA_DEFAULT_ENV, "bin"))
+	return "Activated {}\n".format(env_name), None
+
+def _deactivate(args, stdin=None):
+    if args:
+        print("Usage: deactivate\n"
+              "Deactivates current activated Conda\n"
+              "environment")
+        return
+    if __xonsh_env__["CONDA_DEFAULT_ENV"] is None:
+        return
+    env_name = $CONDA_DEFAULT_ENV
+    $PATH = list(filter(os.path.join($CONDA_ENVS, $CONDA_DEFAULT_ENV).__ne__, $PATH))
+    del $CONDA_DEFAULT_ENV
+    del $CONDA_ENV_PATH
+    return "Deactivated environment {}\n".format(env_name), None
+
+aliases["workon"] = _workon
+aliases["deactivate"] = _deactivate
+aliases["lsvirtualenvs"] = _lsvirtualenvs

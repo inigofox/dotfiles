@@ -28,6 +28,12 @@ Install: `brew bundle`
 
 ## Others
 
+### xonsh
+
+```
+ln -sf $(pwd)/.xonshrc ~/.xonshrc
+```
+
 ### Ohmyzsh
 
 ```
@@ -56,6 +62,7 @@ ln -sf $(pwd)/.atom/init.coffee ~/.atom/init.coffee
 ln -sf $(pwd)/.atom/keymap.cson ~/.atom/keymap.cson
 ln -sf $(pwd)/.atom/styles.less ~/.atom/styles.less
 ln -sf $(pwd)/.atom/snippets.cson ~/.atom/snippets.cson
+
 # My packages:
 git clone git@github.com:danielfrg/atom-nbviewer.git ~/workspace/atom-nbviewer
 pushd ~/workspace/atom-nbviewer
