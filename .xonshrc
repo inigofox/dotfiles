@@ -11,12 +11,15 @@ $XONSH_STORE_STDOUT = True
 # bash "$HOME/workspace/dotfiles/iterm2/base16-tomorrow.dark.sh"
 bash "$HOME/workspace/dotfiles/iterm2/base16-railscasts.dark.sh"
 
+# Bash
+$BASH_COMPLETIONS = ["/usr/local/etc/bash_completion"]
+
 # Defaults
 $PATH.insert(0, "/usr/local/bin")
 $PATH.insert(0, "/Users/danielfrg/anaconda/bin")
 
 # PROMPT
-def _prompt():
+def prompt():
 	p = ""
 	if __xonsh_env__["CONDA_DEFAULT_ENV"] is not None:
 		p += "({})".format($CONDA_DEFAULT_ENV)
@@ -28,15 +31,27 @@ def _prompt():
 	p += "{BOLD_BLUE}{prompt_end}{NO_COLOR} "
 	return p
 
-$PROMPT=lambda: _prompt()
+$PROMPT=lambda: prompt()
+
+# Aliases
+aliases['ls'] = 'ls -la'
+aliases['l'] = 'ls -la'
+aliases['grep'] = 'grep -i --color=always'
+aliases['cdw'] = 'cd ~/workspace'
+
+# Typos
+aliases['it'] = 'git'
+aliases['gi'] = 'git'
+aliases['tit'] = 'git'
+aliases['sl'] = 'ls'
 
 # CONDA
 $ANACONDA = "/Users/danielfrg/anaconda/"
 $CONDA_ENVS = "/Users/danielfrg/anaconda/envs"
-def _lsvirtualenvs(args, stdin=None):
+def lsvirtualenvs(args, stdin=None):
 	return ($(ls "/Users/danielfrg/anaconda/envs"), None)
 
-def _workon(args, stdin=None):
+def workon(args, stdin=None):
 	if len(args) != 1:
 		print("Usage: workon envname\n"
 			"Deactivates previously activated Conda "
@@ -46,7 +61,7 @@ def _workon(args, stdin=None):
 	if not args:
 		return "Provide conda environment\n", None
 
-	_deactivate([], stdin)
+	# _deactivate([], stdin)
 
 	env_name = args[0]
 	env_path = os.path.join($CONDA_ENVS, env_name)
@@ -58,7 +73,7 @@ def _workon(args, stdin=None):
 	$PATH.insert(0, os.path.join($CONDA_ENVS, $CONDA_DEFAULT_ENV, "bin"))
 	return "Activated {}\n".format(env_name), None
 
-def _deactivate(args, stdin=None):
+def deactivate(args, stdin=None):
     if args:
         print("Usage: deactivate\n"
               "Deactivates current activated Conda\n"
@@ -72,6 +87,9 @@ def _deactivate(args, stdin=None):
     del $CONDA_ENV_PATH
     return "Deactivated environment {}\n".format(env_name), None
 
-aliases["workon"] = _workon
-aliases["deactivate"] = _deactivate
-aliases["lsvirtualenvs"] = _lsvirtualenvs
+aliases["workon"] = workon
+del workon
+aliases["deactivate"] = deactivate
+del deactivate
+aliases["lsvirtualenvs"] = lsvirtualenvs
+del lsvirtualenvs
