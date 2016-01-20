@@ -9,7 +9,7 @@
 	excludesfile = /Users/danielfrg/.gitignore_global
 
 [alias]
-    ci = commit --interactive
+    commiti = commit --interactive
     diff = diff --color-words
     st = status
     co = checkout
