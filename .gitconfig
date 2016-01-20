@@ -1,15 +1,18 @@
-# This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
 	name = Daniel Rodriguez
 	email = df.rodriguez143@gmail.com
+
 [push]
 	default = simple
+
 [core]
 	excludesfile = /Users/danielfrg/.gitignore_global
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.5.8/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
+
+[alias]
+    ci = commit --interactive
+    diff = diff --color-words
+    st = status
+    co = checkout
+    gr = grep -i --color -n -E
+    logl = log --pretty=oneline --abbrev-commit
+    lg = log --graph --topo-order --use-mailmap --stat --decorate

@@ -41,7 +41,6 @@ cask 'atom'
 cask 'sublime-text3'
 cask 'vagrant'
 cask 'virtualbox'
-cask 'sourcetree'
 cask 'dash'
 cask 'slack'
 
