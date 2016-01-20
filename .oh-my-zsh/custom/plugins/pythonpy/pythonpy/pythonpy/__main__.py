@@ -25,10 +25,16 @@ Python %s''' % (__version__, sys.version.split(' ')[0])
 
 def import_matches(query, prefix=''):
     matches = set(re.findall(r"(%s[a-zA-Z_][a-zA-Z0-9_]*)\.?" % prefix, query))
-    for module_name in matches:
+    for raw_module_name in matches:
+        if re.match('np(\..*)?$', raw_module_name):
+            module_name = re.sub('^np', 'numpy', raw_module_name)
+        elif re.match('pd(\..*)?$', raw_module_name):
+            module_name = re.sub('^pd', 'pandas', raw_module_name)
+        else:
+            module_name = raw_module_name
         try:
             module = __import__(module_name)
-            globals()[module_name] = module
+            globals()[raw_module_name] = module
             import_matches(query, prefix='%s.' % module_name)
         except ImportError as e:
             pass
@@ -93,7 +99,7 @@ try:
     args = parser.parse_args()
     if sum([args.list_of_stdin, args.lines_of_stdin, args.filter_result]) > 1:
         sys.stderr.write('Pythonpy accepts at most one of [-x, -l] flags\n')
-        sys.exit()
+        sys.exit(1)
 
     if args.json_input:
         def loads(str_):
@@ -202,6 +208,8 @@ except Exception as ex:
         if not foundexpr and line.lstrip().startswith(exprheader) and not isinstance(ex, SyntaxError):
             sys.stderr.write('    {}\n'.format(args.expression))
             foundexpr = True
+    
+    sys.exit(1)
 
 def main():
     pass

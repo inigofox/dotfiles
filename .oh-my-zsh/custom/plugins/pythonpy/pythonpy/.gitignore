@@ -1,0 +1,6 @@
+dist
+*.pyc
+*swp
+MANIFEST
+.tox/
+*.egg-info/
