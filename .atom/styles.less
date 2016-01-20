@@ -19,57 +19,57 @@ atom-pane-container atom-pane {
   // border-bottom: 1px solid #333333;
 }
 
-.tab-bar .tab {
-  // display: none;
-  width: 100%;
-  background-color: rgb(22, 23, 25);
-
-
-  .title {
-    -webkit-mask: none;
-    background-color: inherit;
-  }
-
-  &::after {
-    border-radius: none;
-    border: none;
-    background-image: none;
-    background-clip: content-box;
-    box-shadow: none;
-  }
-}
-
-.tab-bar .tab.active, .tab-bar .tab.active,
-.tab-bar .tab.active[data-type$="Editor"], .tab-bar .tab.active[data-type="MarkdownPreviewView"] {
-  width: 100%;
-  background-color: rgb(22, 23, 25);
-  border-radius: 0;
-  border: solid 2px #52a8ff;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: none;
-
-  &::before {
-    display: none;
-  }
-
-  .title {
-    height: 100%;
-    color: white;
-    -webkit-mask: none;
-    background-color: inherit;
-  }
-}
-
-atom-text-editor,
-:host {
-  background-color: rgb(22, 23, 25);
-}
-
+// .tab-bar .tab {
+//   // display: none;
+//   width: 100%;
+//   background-color: rgb(22, 23, 25);
+//
+//
+//   .title {
+//     -webkit-mask: none;
+//     background-color: inherit;
+//   }
+//
+//   &::after {
+//     border-radius: none;
+//     border: none;
+//     background-image: none;
+//     background-clip: content-box;
+//     box-shadow: none;
+//   }
+// }
+//
+// .tab-bar .tab.active, .tab-bar .tab.active,
+// .tab-bar .tab.active[data-type$="Editor"], .tab-bar .tab.active[data-type="MarkdownPreviewView"] {
+//   width: 100%;
+//   background-color: rgb(22, 23, 25);
+//   border-radius: 0;
+//   border: solid 2px #52a8ff;
+//   border-top: none;
+//   border-left: none;
+//   border-right: none;
+//   border-bottom: none;
+//
+//   &::before {
+//     display: none;
+//   }
+//
+//   .title {
+//     height: 100%;
+//     color: white;
+//     -webkit-mask: none;
+//     background-color: inherit;
+//   }
+// }
+//
+// atom-text-editor,
+// :host {
+//   background-color: rgb(22, 23, 25);
+// }
+//
 atom-text-editor::shadow {
   .gutter {
-    background-color: rgb(22, 23, 25);
+    // background-color: rgb(22, 23, 25);
   }
 
   .gutter[gutter-name=linter] {

@@ -1,0 +1,19 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"Anaconda",
+		"Base16 Color Schemes",
+		"Cython",
+		"Jinja2",
+		"Material Theme",
+		"Package Control",
+		"Project Manager",
+		"Railscasts Extended",
+		"SaltStack-related syntax highlighting and snippets",
+		"Vintageous"
+	]
+}
