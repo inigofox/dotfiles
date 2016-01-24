@@ -24,7 +24,7 @@
   linter:
     showErrorPanel: false
   "linter-pylint":
-    executable: "/Users/danielfrg/anaconda/envs/anaconda-cluster-dev/bin/pylint"
+    executable: "/Users/danielfrg/anaconda/bin/pylint"
   nbviewer:
     jupyterConvertBin: "/Users/danielfrg/anaconda/bin/jupyter-nbconvert"
   "one-dark-ui":

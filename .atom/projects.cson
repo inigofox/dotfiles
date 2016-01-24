@@ -32,6 +32,9 @@ word2vec:
   paths: [
     "/Users/danielfrg/workspace/word2vec"
   ]
+  settings:
+    "linter-pylint":
+      executable: "/Users/danielfrg/anaconda/envs/word2vec-dev/bin/pylint"
 "atom-nbviewer":
   title: "atom-nbviewer"
   paths: [
@@ -44,4 +47,9 @@ libhdfs3:
     "/Users/danielfrg/workspace/cyavro"
     "/Users/danielfrg/workspace/libhdfs3"
     "/Users/danielfrg/workspace/hdfs3"
+  ]
+udeeplearning:
+  title: "u-deeplearning"
+  paths: [
+    "/Users/danielfrg/workspace/u-deeplearning"
   ]
