@@ -16,3 +16,9 @@
     gr = grep -i --color -n -E
     logl = log --pretty=oneline --abbrev-commit
     lg = log --graph --topo-order --use-mailmap --stat --decorate
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.5.8/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

@@ -12,6 +12,7 @@ datasciencebox:
   title: "datasciencebox"
   paths: [
     "/Users/danielfrg/workspace/datasciencebox"
+    "/Users/danielfrg/workspace/aurora-docker"
   ]
   settings:
     "linter-pylint":
@@ -21,6 +22,9 @@ blog:
   paths: [
     "/Users/danielfrg/workspace/blog"
   ]
+  settings:
+    "linter-pylint":
+      executable: "/Users/danielfrg/anaconda/envs/blog/bin/pylint"
 dotfiles:
   title: "dotfiles"
   paths: [
