@@ -25,7 +25,5 @@ alias sl='ls'
 
 source /usr/local/opt/autoenv/activate.sh
 
-# if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-# export PYENV_VIRTUALENV_DISABLE_PROMPT=1

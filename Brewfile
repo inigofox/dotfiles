@@ -9,15 +9,16 @@ brew 'gnu-sed', args: ['with-default-names']
 brew 'wget'
 brew 'zsh'
 brew 'git'
+brew 'unp'
+brew 'autoenv'
+brew 'thefuck'
+
+brew 'python'
+brew 'pyenv'
+brew 'pyenv-virtualenv'
 
 brew 'docker'
 brew 'docker-machine'
-
-brew 'go'
-brew 'python'
-brew 'autoenv'
-brew 'thefuck'
-brew 'unp'
 
 tap 'caskroom/cask'
 tap 'caskroom/versions'
