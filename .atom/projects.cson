@@ -8,11 +8,18 @@
   settings:
     "linter-pylint":
       executable: "/Users/danielfrg/anaconda/envs/anaconda-cluster-dev/bin/pylint"
+distributed:
+  title: "distributed"
+  paths: [
+    "/Users/danielfrg/workspace/distributed"
+  ]
+  settings:
+    "linter-pylint":
+      executable: "/Users/danielfrg/anaconda/bin/pylint"
 datasciencebox:
   title: "datasciencebox"
   paths: [
     "/Users/danielfrg/workspace/datasciencebox"
-    "/Users/danielfrg/workspace/aurora-docker"
   ]
   settings:
     "linter-pylint":
@@ -50,10 +57,14 @@ libhdfs3:
     "/Users/danielfrg/workspace/cyhdfs3"
     "/Users/danielfrg/workspace/cyavro"
     "/Users/danielfrg/workspace/libhdfs3"
-    "/Users/danielfrg/workspace/hdfs3"
   ]
 udeeplearning:
   title: "u-deeplearning"
   paths: [
     "/Users/danielfrg/workspace/u-deeplearning"
+  ]
+"remote-pip":
+  title: "remote-pip"
+  paths: [
+    "/Users/danielfrg/workspace/remote-pip"
   ]

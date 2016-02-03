@@ -12,8 +12,8 @@ bindkey '\e\e[D' backward-word
 
 alias k=clear
 alias cdw='cd ~/workspace'
-alias l='ls -lAh'
-alias ls='ls -lAh'
+alias l='ls -lAhG'
+alias ls='ls -lAhG'
 alias grep='grep -i --color=always'
 alias fuck='eval $(thefuck $(fc -ln -1))'
 
@@ -24,3 +24,8 @@ alias tit='git'
 alias sl='ls'
 
 source /usr/local/opt/autoenv/activate.sh
+
+# if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+# export PYENV_VIRTUALENV_DISABLE_PROMPT=1
