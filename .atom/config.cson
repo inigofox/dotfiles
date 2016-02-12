@@ -4,6 +4,9 @@
   "base16-syntax":
     scheme: "Tomorrow"
   core:
+    disabledPackages: [
+      "linter-pylint"
+    ]
     ignoredNames: [
       ".DS_Store"
       ".git"
@@ -24,9 +27,10 @@
   linter:
     showErrorPanel: false
   "linter-pylint":
-    executable: "/Users/danielfrg/anaconda/bin/pylint"
+    executable: "/Users/danielfrg/.pyenv/versions/distributed/bin/pylint"
+    pythonPath: "%p"
   nbviewer:
-    jupyterConvertBin: "/Users/danielfrg/anaconda/bin/jupyter-nbconvert"
+    jupyterConvertBin: "/Users/danielfrg/.pyenv/versions/3.5.1/bin/jupyter-nbconvert"
   "one-dark-ui":
     layoutMode: "Spacious"
   "tree-view":

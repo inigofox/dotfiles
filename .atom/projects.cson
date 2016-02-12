@@ -6,32 +6,29 @@
     "/Users/danielfrg/workspace/ec2hosts"
   ]
   settings:
-    "linter-pylint":
-      executable: "/Users/danielfrg/anaconda/envs/anaconda-cluster-dev/bin/pylint"
-distributed:
-  title: "distributed"
+    "*":
+      "linter-pylint":
+        executable: "/Users/danielfrg/.pyenv/versions/anaconda-cluster/bin/pylint"
+dask:
+  title: "dask"
   paths: [
-    "/Users/danielfrg/workspace/distributed"
+    "/Users/danielfrg/workspace/dec2"
+    # "/Users/danielfrg/workspace/distributed"
   ]
   settings:
-    "linter-pylint":
-      executable: "/Users/danielfrg/anaconda/bin/pylint"
-datasciencebox:
-  title: "datasciencebox"
-  paths: [
-    "/Users/danielfrg/workspace/datasciencebox"
-  ]
-  settings:
-    "linter-pylint":
-      executable: "/Users/danielfrg/anaconda/envs/dsb-dev/bin/pylint"
+    "*":
+      "linter-pylint":
+        executable: "/Users/danielfrg/.pyenv/versions/dec2/bin/pylint"
+        workingDirectory: "%p"
 blog:
   title: "blog"
   paths: [
     "/Users/danielfrg/workspace/blog"
   ]
   settings:
-    "linter-pylint":
-      executable: "/Users/danielfrg/anaconda/envs/blog/bin/pylint"
+    "*":
+      "linter-pylint":
+        executable: "/Users/danielfrg/.pyenv/versions/blog/bin/pylint"
 dotfiles:
   title: "dotfiles"
   paths: [
@@ -44,21 +41,22 @@ word2vec:
     "/Users/danielfrg/workspace/word2vec"
   ]
   settings:
-    "linter-pylint":
-      executable: "/Users/danielfrg/anaconda/envs/word2vec-dev/bin/pylint"
+    "*":
+      "linter-pylint":
+        executable: "/Users/danielfrg/.pyenv/versions/word2vec/bin/pylint"
 "atom-nbviewer":
   title: "atom-nbviewer"
   paths: [
     "/Users/danielfrg/workspace/atom-nbviewer"
   ]
-libhdfs3:
-  title: "libhdfs3"
+cyhdfs3:
+  title: "cyhdfs3"
   paths: [
     "/Users/danielfrg/workspace/cyhdfs3"
     "/Users/danielfrg/workspace/cyavro"
     "/Users/danielfrg/workspace/libhdfs3"
   ]
-udeeplearning:
+"u-deeplearning":
   title: "u-deeplearning"
   paths: [
     "/Users/danielfrg/workspace/u-deeplearning"
