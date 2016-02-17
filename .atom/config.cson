@@ -4,9 +4,6 @@
   "base16-syntax":
     scheme: "Tomorrow"
   core:
-    disabledPackages: [
-      "linter-pylint"
-    ]
     ignoredNames: [
       ".DS_Store"
       ".git"
@@ -20,6 +17,7 @@
     fontFamily: "Hack"
     fontSize: 15
     invisibles: {}
+    preferredLineLength: 100
     showIndentGuide: true
     tabLength: 4
   "exception-reporting":
@@ -27,7 +25,7 @@
   linter:
     showErrorPanel: false
   "linter-pylint":
-    executable: "/Users/danielfrg/.pyenv/versions/distributed/bin/pylint"
+    executable: "/Users/danielfrg/.pyenv/versions/3.5.1/bin/pylint"
     pythonPath: "%p"
   nbviewer:
     jupyterConvertBin: "/Users/danielfrg/.pyenv/versions/3.5.1/bin/jupyter-nbconvert"

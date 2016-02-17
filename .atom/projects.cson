@@ -13,7 +13,7 @@ dask:
   title: "dask"
   paths: [
     "/Users/danielfrg/workspace/dec2"
-    # "/Users/danielfrg/workspace/distributed"
+    "/Users/danielfrg/workspace/distributed"
   ]
   settings:
     "*":
@@ -60,9 +60,4 @@ cyhdfs3:
   title: "u-deeplearning"
   paths: [
     "/Users/danielfrg/workspace/u-deeplearning"
-  ]
-"remote-pip":
-  title: "remote-pip"
-  paths: [
-    "/Users/danielfrg/workspace/remote-pip"
   ]

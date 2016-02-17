@@ -10,12 +10,9 @@ brew 'wget'
 brew 'zsh'
 brew 'git'
 brew 'unp'
-brew 'autoenv'
 brew 'thefuck'
 
 brew 'python'
-brew 'pyenv'
-brew 'pyenv-virtualenv'
 
 brew 'docker'
 brew 'docker-machine'
