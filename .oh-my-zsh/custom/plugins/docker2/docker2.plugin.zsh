@@ -1,20 +1,20 @@
-local test_=$(docker-machine status default) 2>/dev/null
+local test_=$(docker-machine status docker) 2>/dev/null
 
 docker-machine-create() {
-  docker-machine create -d virtualbox --virtualbox-cpu-count "2" --virtualbox-memory 4096 default
+  docker-machine create -d virtualbox --virtualbox-cpu-count "2" --virtualbox-memory 4096 docker
 }
 
 docker-env() {
   if [[ $test_ == "Running" ]]; then
   else
-    docker-machine start default
+    docker-machine start docker
   fi
-  docker-machine env default
-  eval "$(docker-machine env default)"
+  docker-machine env docker
+  eval "$(docker-machine env docker)"
 }
 
 if [[ $test_ == "Running" ]]; then
-    eval "$(docker-machine env default)"
+    eval "$(docker-machine env docker)"
 else
     # echo "docker-machine not running"
 fi

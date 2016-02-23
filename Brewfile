@@ -16,6 +16,7 @@ brew 'python'
 
 brew 'docker'
 brew 'docker-machine'
+brew 'docker-compose'
 
 tap 'caskroom/cask'
 tap 'caskroom/versions'
@@ -35,12 +36,15 @@ cask 'spotifree'
 cask 'silverlight'
 
 cask 'iterm2'
+cask 'java'
 cask 'atom'
 cask 'sublime-text3'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'dash'
 cask 'slack'
+
+cask 'caskroom/fonts/font-hack'
 
 cask 'osxfuse'
 brew 'homebrew/fuse/ntfs-3g'
