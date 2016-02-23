@@ -1,6 +1,3 @@
-# Add to $PATH
-# export PATH=$(brew --prefix coreutils)/libexec/bin:$PATH
-# export PATH=$(brew --prefix moreutils)/libexec/bin:$PATH
 brew 'coreutils'
 brew 'moreutils'
 brew 'findutils'
