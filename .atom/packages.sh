@@ -9,3 +9,5 @@ apm install language-salt
 apm install atom-jinja2
 apm install tabs-to-spaces
 apm install auto-detect-indentation
+apm install vim-mode
+

@@ -1,23 +1,23 @@
-local test_=$(docker-machine status docker) 2>/dev/null
-
-docker-machine-create() {
-  docker-machine create -d virtualbox --virtualbox-cpu-count "2" --virtualbox-memory 4096 docker
-}
-
-docker-env() {
-  if [[ $test_ == "Running" ]]; then
-  else
-    docker-machine start docker
-  fi
-  docker-machine env docker
-  eval "$(docker-machine env docker)"
-}
-
-if [[ $test_ == "Running" ]]; then
-    eval "$(docker-machine env docker)"
-else
-    # echo "docker-machine not running"
-fi
+# local test_=$(docker-machine status docker) 2>/dev/null
+#
+# docker-machine-create() {
+#   docker-machine create -d virtualbox --virtualbox-cpu-count "2" --virtualbox-memory 4096 docker
+# }
+#
+# docker-env() {
+#   if [[ $test_ == "Running" ]]; then
+#   else
+#     docker-machine start docker
+#   fi
+#   docker-machine env docker
+#   eval "$(docker-machine env docker)"
+# }
+#
+# if [[ $test_ == "Running" ]]; then
+#     eval "$(docker-machine env docker)"
+# else
+#     # echo "docker-machine not running"
+# fi
 
 alias docker-cmd="docker run -it"
 docker-build() { docker build -t=\'$1\' . }

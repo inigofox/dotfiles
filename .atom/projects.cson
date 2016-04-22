@@ -1,63 +1,54 @@
+adam:
+  title: "adam"
+  paths: [
+    "/Users/danielfrg/workspace/adam"
+    "/Users/danielfrg/workspace/adam-cloudera"
+    "/Users/danielfrg/workspace/adam-notebook"
+    "/Users/danielfrg/workspace/ec2hosts"
+    "/Users/danielfrg/workspace/adam-dask"
+    "/Users/danielfrg/.continuum"
+  ]
+  settings:
+    "linter-flake8":
+      executablePath: "/Users/danielfrg/anaconda/envs/adam/bin/flake8"
+    "autocomplete-python":
+      pythonPaths: "/Users/danielfrg/anaconda/envs/adam/bin/python"
+    "python-tools":
+      pythonPath: "/Users/danielfrg/anconda/envs/adam/bin"
 "anaconda-cluster":
   title: "anaconda-cluster"
   paths: [
     "/Users/danielfrg/workspace/anaconda-cluster"
     "/Users/danielfrg/.acluster"
-    "/Users/danielfrg/workspace/ec2hosts"
   ]
   settings:
-    "*":
-      "linter-pylint":
-        executable: "/Users/danielfrg/.pyenv/versions/anaconda-cluster/bin/pylint"
+    "linter-pylint":
+      executable: "/Users/danielfrg/anaconda/envs/anaconda-cluster/bin/pylint"
 dask:
   title: "dask"
   paths: [
     "/Users/danielfrg/workspace/dec2"
-    "/Users/danielfrg/workspace/distributed"
   ]
   settings:
-    "*":
-      "linter-pylint":
-        executable: "/Users/danielfrg/.pyenv/versions/dec2/bin/pylint"
-        workingDirectory: "%p"
+    "linter-pylint":
+      executable: "/Users/danielfrg/anaconda/envs/dec2/bin/pylint"
+      workingDirectory: "%p"
 blog:
   title: "blog"
   paths: [
     "/Users/danielfrg/workspace/blog"
   ]
   settings:
-    "*":
-      "linter-pylint":
-        executable: "/Users/danielfrg/.pyenv/versions/blog/bin/pylint"
+    "linter-pylint":
+      executable: "/Users/danielfrg/anaconda/envs/blog/bin/pylint"
 dotfiles:
   title: "dotfiles"
   paths: [
     "/Users/danielfrg/workspace/dotfiles"
     "/Users/danielfrg"
   ]
-word2vec:
-  title: "word2vec"
-  paths: [
-    "/Users/danielfrg/workspace/word2vec"
-  ]
-  settings:
-    "*":
-      "linter-pylint":
-        executable: "/Users/danielfrg/.pyenv/versions/word2vec/bin/pylint"
 "atom-nbviewer":
   title: "atom-nbviewer"
   paths: [
     "/Users/danielfrg/workspace/atom-nbviewer"
-  ]
-cyhdfs3:
-  title: "cyhdfs3"
-  paths: [
-    "/Users/danielfrg/workspace/cyhdfs3"
-    "/Users/danielfrg/workspace/cyavro"
-    "/Users/danielfrg/workspace/libhdfs3"
-  ]
-"u-deeplearning":
-  title: "u-deeplearning"
-  paths: [
-    "/Users/danielfrg/workspace/u-deeplearning"
   ]

@@ -1,4 +1,9 @@
 "*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "fe65d581-8d0a-4297-bb97-847c4c758ba5"
+  "autocomplete-python":
+    pythonPaths: "/Users/danielfrg/anaconda/envs/adam/bin/python"
   autosave:
     enabled: true
   "base16-syntax":
@@ -17,20 +22,26 @@
     fontFamily: "Hack"
     fontSize: 15
     invisibles: {}
-    preferredLineLength: 100
+    preferredLineLength: 120
     showIndentGuide: true
     tabLength: 4
   "exception-reporting":
     userId: "31fb4b32-093c-7478-de1a-ab36924e609e"
   linter:
     showErrorPanel: false
+  "linter-flake8":
+    executablePath: "/Users/danielfrg/anaconda/envs/adam/bin/flake8"
+    flakeErrors: true
+    maxLineLength: 120
   "linter-pylint":
-    executable: "/Users/danielfrg/.pyenv/versions/3.5.1/bin/pylint"
-    pythonPath: "%p"
+    executable: "/Users/danielfrg/anaconda/envs/dec2/bin/pylint"
+    workingDirectory: "%p"
   nbviewer:
-    jupyterConvertBin: "/Users/danielfrg/.pyenv/versions/3.5.1/bin/jupyter-nbconvert"
+    jupyterConvertBin: "/Users/danielfrg/anaconda/bin/jupyter-nbconvert"
   "one-dark-ui":
     layoutMode: "Spacious"
+  "python-tools":
+    pythonPath: "/Users/danielfrg/anconda/envs/adam/bin"
   "tree-view":
     hideIgnoredNames: true
     showOnRightSide: true
