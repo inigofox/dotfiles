@@ -4,8 +4,10 @@ adam:
     "/Users/danielfrg/workspace/adam"
     "/Users/danielfrg/workspace/adam-cloudera"
     "/Users/danielfrg/workspace/adam-notebook"
-    "/Users/danielfrg/workspace/ec2hosts"
     "/Users/danielfrg/workspace/adam-dask"
+    "/Users/danielfrg/workspace/adam-repository"
+    "/Users/danielfrg/workspace/adam-mosaic"
+    "/Users/danielfrg/workspace/ec2hosts"
     "/Users/danielfrg/.continuum"
   ]
   settings:

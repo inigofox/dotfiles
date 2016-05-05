@@ -11,10 +11,6 @@ brew 'thefuck'
 
 brew 'python'
 
-brew 'docker'
-brew 'docker-machine'
-brew 'docker-compose'
-
 tap 'caskroom/cask'
 tap 'caskroom/versions'
 
