@@ -9,8 +9,6 @@ brew 'git'
 brew 'unp'
 brew 'thefuck'
 
-brew 'python'
-
 tap 'caskroom/cask'
 tap 'caskroom/versions'
 
@@ -31,13 +29,9 @@ cask 'silverlight'
 cask 'iterm2'
 cask 'java'
 cask 'atom'
-cask 'sublime-text3'
 cask 'vagrant'
 cask 'virtualbox'
-cask 'dash'
-cask 'slack'
+cask 'sourcetree'
 
 cask 'caskroom/fonts/font-hack'
 
-cask 'osxfuse'
-brew 'homebrew/fuse/ntfs-3g'
