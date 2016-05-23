@@ -28,6 +28,12 @@ Install: `brew bundle`
 
 ## Others
 
+### conda
+
+```
+ln -sF $(pwd)/.condarc ~/.condarc
+```
+
 ### xonsh
 
 ```
