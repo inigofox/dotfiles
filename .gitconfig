@@ -12,8 +12,11 @@
     commiti = commit --interactive
     diff = diff --color-words
     st = status
+	br = branch
+	ci = commit
     co = checkout
     gr = grep -i --color -n -E
+	rebase = rebase -i
     logl = log --pretty=oneline --abbrev-commit
     lg = log --graph --topo-order --use-mailmap --stat --decorate
 [difftool "sourcetree"]

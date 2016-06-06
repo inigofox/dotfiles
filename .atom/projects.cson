@@ -1,3 +1,8 @@
+kubernetes:
+  title: "kubernetes"
+  paths: [
+    "/Users/danielfrg/workspace/kube"
+  ]
 adam:
   title: "adam"
   paths: [
@@ -7,6 +12,8 @@ adam:
     "/Users/danielfrg/workspace/adam-dask"
     "/Users/danielfrg/workspace/adam-repository"
     "/Users/danielfrg/workspace/adam-mosaic"
+    "/Users/danielfrg/workspace/adam-accelerate"
+    "/Users/danielfrg/workspace/adam-aproject"
     "/Users/danielfrg/.continuum"
   ]
   settings:
@@ -48,8 +55,9 @@ dotfiles:
     "/Users/danielfrg/workspace/dotfiles"
     "/Users/danielfrg"
   ]
-"atom-nbviewer":
-  title: "atom-nbviewer"
+"conda-recipes":
+  title: "conda-recipes"
   paths: [
-    "/Users/danielfrg/workspace/atom-nbviewer"
+    "/Users/danielfrg/workspace/staged-recipes"
+    "/Users/danielfrg/workspace/m2crypto-feedstock"
   ]
