@@ -30,18 +30,15 @@
   linter:
     showErrorPanel: false
   "linter-flake8":
-    executablePath: "/Users/danielfrg/anaconda/envs/adam/bin/flake8"
+    executablePath: "/Users/danielfrg/anaconda/bin/flake8"
     flakeErrors: true
     maxLineLength: 120
-  "linter-pylint":
-    executable: "/Users/danielfrg/anaconda/envs/dec2/bin/pylint"
-    workingDirectory: "%p"
   nbviewer:
     jupyterConvertBin: "/Users/danielfrg/anaconda/bin/jupyter-nbconvert"
   "one-dark-ui":
     layoutMode: "Spacious"
   "python-tools":
-    pythonPath: "/Users/danielfrg/anconda/envs/adam/bin"
+    pythonPath: "/Users/danielfrg/anconda/bin"
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true

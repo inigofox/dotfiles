@@ -23,7 +23,6 @@ cask 'keyboard-maestro'
 cask 'clipmenu'
 cask 'keka'
 cask 'spotify'
-cask 'spotifree'
 cask 'silverlight'
 cask 'slack'
 
