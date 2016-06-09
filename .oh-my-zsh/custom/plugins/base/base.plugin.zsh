@@ -6,7 +6,10 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=$(brew --prefix coreutils)/libexec/bin:$PATH
 export PATH=$(brew --prefix moreutils)/libexec/bin:$PATH
 
-bindkey -e
+bindkey '[C' forward-word
+bindkey '[D' backward-word
+bindkey '^[^[[D' backward-word
+bindkey '^[^[[C' forward-word
 bindkey '\e\e[C' forward-word
 bindkey '\e\e[D' backward-word
 
