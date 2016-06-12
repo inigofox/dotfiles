@@ -60,4 +60,5 @@ dotfiles:
   paths: [
     "/Users/danielfrg/workspace/staged-recipes"
     "/Users/danielfrg/workspace/m2crypto-feedstock"
+    "/Users/danielfrg/workspace/salt-feedstock"
   ]
