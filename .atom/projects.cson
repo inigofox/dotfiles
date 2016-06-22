@@ -35,7 +35,7 @@ adam:
 dask:
   title: "dask"
   paths: [
-    "/Users/danielfrg/workspace/dec2"
+    "/Users/danielfrg/workspace/dask-ec2"
   ]
   settings:
     "linter-pylint":
@@ -61,4 +61,6 @@ dotfiles:
     "/Users/danielfrg/workspace/staged-recipes"
     "/Users/danielfrg/workspace/m2crypto-feedstock"
     "/Users/danielfrg/workspace/salt-feedstock"
+    "/Users/danielfrg/workspace/apache-libcloud-feedstock"
+    "/Users/danielfrg/workspace/libcloud"
   ]
