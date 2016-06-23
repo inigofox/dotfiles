@@ -6,6 +6,7 @@ brew 'gnu-sed', args: ['with-default-names']
 brew 'wget'
 brew 'zsh'
 brew 'git'
+brew 'gnupg'
 brew 'unp'
 brew 'thefuck'
 
@@ -34,4 +35,3 @@ cask 'virtualbox'
 cask 'sourcetree'
 
 cask 'caskroom/fonts/font-hack'
-
