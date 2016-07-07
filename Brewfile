@@ -26,6 +26,7 @@ cask 'keka'
 cask 'spotify'
 cask 'silverlight'
 cask 'slack'
+cask 'smoothmouse'
 
 cask 'iterm2'
 cask 'java'

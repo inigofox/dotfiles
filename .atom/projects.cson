@@ -1,8 +1,3 @@
-kubernetes:
-  title: "kubernetes"
-  paths: [
-    "/Users/danielfrg/workspace/kube"
-  ]
 adam:
   title: "adam"
   paths: [
@@ -13,6 +8,7 @@ adam:
     "/Users/danielfrg/workspace/adam-repository"
     "/Users/danielfrg/workspace/adam-mosaic"
     "/Users/danielfrg/workspace/adam-accelerate"
+    "/Users/danielfrg/workspace/adam-enterprise-notebooks"
     "/Users/danielfrg/workspace/adam-aproject"
     "/Users/danielfrg/.continuum"
   ]
@@ -23,15 +19,15 @@ adam:
       pythonPaths: "/Users/danielfrg/anaconda/envs/adam/bin/python"
     "python-tools":
       pythonPath: "/Users/danielfrg/anconda/envs/adam/bin"
-"anaconda-cluster":
-  title: "anaconda-cluster"
+"not-binder":
+  title: "not-binder"
   paths: [
-    "/Users/danielfrg/workspace/anaconda-cluster"
-    "/Users/danielfrg/.acluster"
+    "/Users/danielfrg/workspace/not-binder"
+    "/Users/danielfrg/workspace/kubernetes-scipy-2016"
   ]
   settings:
     "linter-pylint":
-      executable: "/Users/danielfrg/anaconda/envs/anaconda-cluster/bin/pylint"
+      executable: "/Users/danielfrg/anaconda/envs/not-binder/bin/pylint"
 dask:
   title: "dask"
   paths: [
@@ -39,7 +35,16 @@ dask:
   ]
   settings:
     "linter-pylint":
-      executable: "/Users/danielfrg/anaconda/envs/dec2/bin/pylint"
+      executable: "/Users/danielfrg/anaconda/envs/dask-ec2/bin/pylint"
+      workingDirectory: "%p"
+knit:
+  title: "knit"
+  paths: [
+    "/Users/danielfrg/workspace/knit-conda"
+  ]
+  settings:
+    "linter-pylint":
+      executable: "/Users/danielfrg/anaconda/envs/knit-conda/bin/pylint"
       workingDirectory: "%p"
 blog:
   title: "blog"
@@ -59,8 +64,9 @@ dotfiles:
   title: "conda-recipes"
   paths: [
     "/Users/danielfrg/workspace/staged-recipes"
-    "/Users/danielfrg/workspace/m2crypto-feedstock"
-    "/Users/danielfrg/workspace/salt-feedstock"
-    "/Users/danielfrg/workspace/apache-libcloud-feedstock"
-    "/Users/danielfrg/workspace/libcloud"
+  ]
+tensorflow:
+  title: "tensorflow"
+  paths: [
+    "/Users/danielfrg/workspace/tensorflow"
   ]
