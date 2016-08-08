@@ -9,8 +9,9 @@ adam:
     "/Users/danielfrg/workspace/adam-mosaic"
     "/Users/danielfrg/workspace/adam-accelerate"
     "/Users/danielfrg/workspace/adam-enterprise-notebooks"
-    "/Users/danielfrg/workspace/adam-aproject"
+    "/Users/danielfrg/workspace/adam-kapsel"
     "/Users/danielfrg/.continuum"
+    "/Users/danielfrg/workspace/continuum_gen_license"
   ]
   settings:
     "linter-flake8":
@@ -23,7 +24,6 @@ adam:
   title: "not-binder"
   paths: [
     "/Users/danielfrg/workspace/not-binder"
-    "/Users/danielfrg/workspace/kubernetes-scipy-2016"
   ]
   settings:
     "linter-pylint":
@@ -64,6 +64,7 @@ dotfiles:
   title: "conda-recipes"
   paths: [
     "/Users/danielfrg/workspace/staged-recipes"
+    "/Users/danielfrg/workspace/dec2-feedstock"
   ]
 tensorflow:
   title: "tensorflow"

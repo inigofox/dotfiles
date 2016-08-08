@@ -6,6 +6,7 @@ brew 'gnu-sed', args: ['with-default-names']
 brew 'wget'
 brew 'zsh'
 brew 'git'
+brew 'tmux'
 brew 'gnupg'
 brew 'unp'
 brew 'thefuck'
