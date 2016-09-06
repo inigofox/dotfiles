@@ -2,16 +2,15 @@ adam:
   title: "adam"
   paths: [
     "/Users/danielfrg/workspace/adam"
-    "/Users/danielfrg/workspace/adam-cloudera"
     "/Users/danielfrg/workspace/adam-notebook"
     "/Users/danielfrg/workspace/adam-dask"
-    "/Users/danielfrg/workspace/adam-repository"
-    "/Users/danielfrg/workspace/adam-mosaic"
-    "/Users/danielfrg/workspace/adam-accelerate"
     "/Users/danielfrg/workspace/adam-enterprise-notebooks"
+    "/Users/danielfrg/workspace/adam-mosaic"
+    "/Users/danielfrg/workspace/adam-repository"
+    "/Users/danielfrg/workspace/adam-accelerate"
     "/Users/danielfrg/workspace/adam-kapsel"
+    "/Users/danielfrg/workspace/adam-cloudera"
     "/Users/danielfrg/.continuum"
-    "/Users/danielfrg/workspace/continuum_gen_license"
   ]
   settings:
     "linter-flake8":
@@ -20,10 +19,12 @@ adam:
       pythonPaths: "/Users/danielfrg/anaconda/envs/adam/bin/python"
     "python-tools":
       pythonPath: "/Users/danielfrg/anconda/envs/adam/bin"
-"not-binder":
-  title: "not-binder"
+"anaconda-deploy":
+  title: "anaconda-deploy"
   paths: [
-    "/Users/danielfrg/workspace/not-binder"
+    "/Users/danielfrg/workspace/anaconda-deploy"
+    "/Users/danielfrg/workspace/contrun"
+    "/Users/danielfrg/workspace/bokeh"
   ]
   settings:
     "linter-pylint":

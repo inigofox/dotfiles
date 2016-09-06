@@ -43,6 +43,7 @@
     pythonPath: "/Users/danielfrg/anconda/envs/adam/bin"
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
     showOnRightSide: true
     squashDirectoryNames: true
   welcome:
