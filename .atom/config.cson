@@ -14,9 +14,10 @@
       ".git"
       "*.pyc"
     ]
+    telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "base16-tomorrow-dark-theme"
+      "no-highlight-syntax"
     ]
   editor:
     fontFamily: "Hack"
@@ -41,6 +42,8 @@
     layoutMode: "Spacious"
   "python-tools":
     pythonPath: "/Users/danielfrg/anconda/envs/adam/bin"
+  "sass-autocompile":
+    nodeSassPath: "/Users/danielfrg/workspace/node_modules/.bin/"
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true

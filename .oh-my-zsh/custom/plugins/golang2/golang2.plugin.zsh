@@ -1,8 +1,9 @@
-export GO15VENDOREXPERIMENT=1
-
-export GOPATH=~/workspace
+export GOPATH=~/workspace/go
+export PATH=$GOPATH/bin:$PATH
 
 gopathhere() {
     export GOPATH=$(pwd)
-    echo $GOPATH
+    export PATH=$GOPATH/bin:$PATH
+    echo GOPATH=$GOPATH
+    echo PATH=$PATH
 }

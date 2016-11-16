@@ -1,74 +1,98 @@
-adam:
-  title: "adam"
-  paths: [
-    "/Users/danielfrg/workspace/adam"
-    "/Users/danielfrg/workspace/adam-notebook"
-    "/Users/danielfrg/workspace/adam-dask"
-    "/Users/danielfrg/workspace/adam-enterprise-notebooks"
-    "/Users/danielfrg/workspace/adam-mosaic"
-    "/Users/danielfrg/workspace/adam-repository"
-    "/Users/danielfrg/workspace/adam-accelerate"
-    "/Users/danielfrg/workspace/adam-kapsel"
-    "/Users/danielfrg/workspace/adam-cloudera"
-    "/Users/danielfrg/.continuum"
-  ]
-  settings:
-    "linter-flake8":
-      executablePath: "/Users/danielfrg/anaconda/envs/adam/bin/flake8"
-    "autocomplete-python":
-      pythonPaths: "/Users/danielfrg/anaconda/envs/adam/bin/python"
-    "python-tools":
-      pythonPath: "/Users/danielfrg/anconda/envs/adam/bin"
-"anaconda-deploy":
-  title: "anaconda-deploy"
-  paths: [
-    "/Users/danielfrg/workspace/anaconda-deploy"
-    "/Users/danielfrg/workspace/contrun"
-    "/Users/danielfrg/workspace/bokeh"
-  ]
-  settings:
-    "linter-pylint":
-      executable: "/Users/danielfrg/anaconda/envs/not-binder/bin/pylint"
-dask:
-  title: "dask"
-  paths: [
-    "/Users/danielfrg/workspace/dask-ec2"
-  ]
-  settings:
-    "linter-pylint":
-      executable: "/Users/danielfrg/anaconda/envs/dask-ec2/bin/pylint"
-      workingDirectory: "%p"
-knit:
-  title: "knit"
-  paths: [
-    "/Users/danielfrg/workspace/knit-conda"
-  ]
-  settings:
-    "linter-pylint":
-      executable: "/Users/danielfrg/anaconda/envs/knit-conda/bin/pylint"
-      workingDirectory: "%p"
-blog:
-  title: "blog"
-  paths: [
-    "/Users/danielfrg/workspace/blog"
-  ]
-  settings:
-    "linter-pylint":
-      executable: "/Users/danielfrg/anaconda/envs/blog/bin/pylint"
-dotfiles:
-  title: "dotfiles"
-  paths: [
-    "/Users/danielfrg/workspace/dotfiles"
-    "/Users/danielfrg"
-  ]
-"conda-recipes":
-  title: "conda-recipes"
-  paths: [
-    "/Users/danielfrg/workspace/staged-recipes"
-    "/Users/danielfrg/workspace/dec2-feedstock"
-  ]
-tensorflow:
-  title: "tensorflow"
-  paths: [
-    "/Users/danielfrg/workspace/tensorflow"
-  ]
+[
+  {
+    title: "adam"
+    group: ""
+    paths: [
+      "/Users/danielfrg/workspace/adam/adam"
+      "/Users/danielfrg/workspace/adam/adam-jupyter"
+      "/Users/danielfrg/workspace/adam/adam-openscoring"
+      "/Users/danielfrg/workspace/adam/adam-kubernetes"
+      "/Users/danielfrg/workspace/adam/adam-dask"
+      "/Users/danielfrg/workspace/adam/adam-enterprise-notebooks"
+      "/Users/danielfrg/workspace/adam/adam-repository"
+      "/Users/danielfrg/workspace/adam/adam-accelerate"
+      "/Users/danielfrg/workspace/adam/adam-kapsel"
+      "/Users/danielfrg/workspace/adam/adam-cloudera"
+      "/Users/danielfrg/workspace/adam/adam-mosaic"
+      "/Users/danielfrg/.continuum"
+    ]
+    icon: "icon-chevron-right"
+    settings:
+      "linter-flake8":
+        executablePath: "/Users/danielfrg/anaconda/envs/adam/bin/flake8"
+      "autocomplete-python":
+        pythonPaths: "/Users/danielfrg/anaconda/envs/adam/bin/python"
+      "python-tools":
+        pythonPath: "/Users/danielfrg/anconda/envs/adam/bin"
+    devMode: false
+    template: null
+  }
+  {
+    title: "jupyter"
+    group: ""
+    paths: [
+      "/Users/danielfrg/workspace/jupyter/jupyterhub"
+      "/Users/danielfrg/workspace/jupyter/kubernetes_spawner"
+      "/Users/danielfrg/workspace/jupyter/s3contents"
+      "/Users/danielfrg/workspace/jupyter/dashboards_server"
+      "/Users/danielfrg/workspace/jupyter/develop"
+      "/Users/danielfrg/workspace/jupyter/anacondahub-rewrite"
+    ]
+    icon: "icon-chevron-right"
+    settings:
+      "linter-pylint":
+        executable: "/Users/danielfrg/anaconda/envs/jupyterhub/bin/pylint"
+    devMode: false
+    template: null
+  }
+  {
+    title: "dst"
+    group: ""
+    paths: [
+      "/Users/danielfrg/workspace/dst"
+    ]
+    icon: "icon-chevron-right"
+    settings: {}
+    devMode: false
+    template: null
+  }
+  {
+    title: "dask"
+    group: ""
+    paths: [
+      "/Users/danielfrg/workspace/dask-ec2"
+      "/Users/danielfrg/workspace/adam"
+    ]
+    icon: "icon-chevron-right"
+    settings:
+      "linter-pylint":
+        executable: "/Users/danielfrg/anaconda/envs/dask-ec2/bin/pylint"
+        workingDirectory: "%p"
+    devMode: false
+    template: null
+  }
+  {
+    title: "blog"
+    group: ""
+    paths: [
+      "/Users/danielfrg/workspace/blog"
+    ]
+    icon: "icon-chevron-right"
+    settings:
+      "linter-pylint":
+        executable: "/Users/danielfrg/anaconda/envs/blog/bin/pylint"
+    devMode: false
+    template: null
+  }
+  {
+    title: "dotfiles"
+    group: ""
+    paths: [
+      "/Users/danielfrg/workspace/dotfiles"
+    ]
+    icon: "icon-chevron-right"
+    settings: {}
+    devMode: false
+    template: null
+  }
+]
