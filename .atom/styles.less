@@ -5,13 +5,12 @@
  * when it is changed and saved.
  */
 
-atom-workspace atom-panel-container.left:empty {
-  padding-left: 0;
+atom-pane-container {
+  padding-top: 0em;
 }
 
-atom-pane-container atom-pane {
-  padding-top: 0;
-  padding-right: 0;
+atom-panel-container.left, atom-panel-container.right {
+  min-width: 0em;
 }
 
 .tab-bar {
@@ -66,7 +65,7 @@ atom-pane-container atom-pane {
 // :host {
 //   background-color: rgb(22, 23, 25);
 // }
-//
+
 atom-text-editor::shadow {
   .gutter {
     // background-color: rgb(22, 23, 25);

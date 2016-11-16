@@ -14,11 +14,13 @@
       ".git"
       "*.pyc"
     ]
+    projectHome: "/Users/danielfrg/workspace"
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
       "no-highlight-syntax"
     ]
+    useCustomTitleBar: true
   editor:
     fontFamily: "Hack"
     fontSize: 15
