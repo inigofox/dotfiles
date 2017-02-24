@@ -4,11 +4,19 @@
       _analyticsUserId: "fe65d581-8d0a-4297-bb97-847c4c758ba5"
   "autocomplete-python":
     pythonPaths: "/Users/danielfrg/anaconda/envs/adam/bin/python"
+    useKite: false
   autosave:
     enabled: true
   "base16-syntax":
     scheme: "Tomorrow"
   core:
+    automaticallyUpdate: false
+    destroyEmptyPanes: false
+    disabledPackages: [
+      "autocomplete-python"
+      "sass-autocompile"
+    ]
+    excludeVcsIgnoredPaths: false
     ignoredNames: [
       ".DS_Store"
       ".git"
@@ -18,7 +26,7 @@
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "no-highlight-syntax"
+      "base16-tomorrow-dark-theme"
     ]
     useCustomTitleBar: true
   editor:
@@ -30,6 +38,8 @@
     tabLength: 4
   "exception-reporting":
     userId: "31fb4b32-093c-7478-de1a-ab36924e609e"
+  "go-plus":
+    currentPanelHeight: "21.70675830469645vh"
   linter:
     showErrorPanel: false
   "linter-flake8":
@@ -48,7 +58,6 @@
     nodeSassPath: "/Users/danielfrg/workspace/node_modules/.bin/"
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
     showOnRightSide: true
     squashDirectoryNames: true
   welcome:

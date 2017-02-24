@@ -43,9 +43,6 @@ compdef _complete_conda_envs cdvirtualenv
 
 workon() {
     conda_root_dir
-    if [[ $1 == "cc" ]]; then
-        export PYTHONPATH=$HOME/code/conda-cluster:$PYTHONPATH
-    fi
     source $ANACONDA/bin/activate $1
 }
 compdef _complete_conda_envs workon

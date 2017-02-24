@@ -15,13 +15,13 @@ dirpush() {
     fi;
 
     echo "Syncing $1 to $2"
-    rsync -avz -e "ssh -i $3" $1 $2
-    
+    rsync -avz -e "ssh -i $3" $1 $2 --exclude='.git/'
+
     echo "Waiting for events"
     fswatch $1 | while read -r event
     do
         echo "File Changed: $event"
-        rsync -avz -e "ssh -i $3" $1 $2
+        rsync -avz -e "ssh -i $3" $1 $2 --exclude='.git/'
     done
 
     return 0;

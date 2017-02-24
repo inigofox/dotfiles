@@ -35,5 +35,6 @@ cask 'atom'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'sourcetree'
+cask 'licecap'
 
 cask 'caskroom/fonts/font-hack'
