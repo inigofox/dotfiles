@@ -1,5 +1,3 @@
-# alias dirpush='rsync "ssh -i /home/thisuser/cron/thishost-rsync-key"'
-
 dirpush() {
     if [ -z "$1" ]; then
         echo "Input directory needed"

@@ -1,3 +1,9 @@
+#Prompt: danielfrg at host in ~ (with some spaces)
+# Blue user: %{$fg[blue]%}%n%{$reset_color%}
+# Green host: %{$fg[green]%}%m%{$reset_color%}
+# Blue location: %{$fg[cyan]%}%c%{$reset_color%}
+PROMPT=$'\n%{$fg[blue]%}%n%{$reset_color%} at %{$fg[green]%}%m%{$reset_color%} in %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)\n${ret_status} %{$reset_color%}'
+
 # Color scheme
 BASE16_SHELL="$HOME/workspace/dotfiles/iterm2/base16-tomorrow.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
@@ -15,22 +21,11 @@ bindkey '^[^[[C' forward-word
 bindkey '\e\e[C' forward-word
 bindkey '\e\e[D' backward-word
 
-alias k=clear
-alias cdw='cd ~/workspace'
-alias l='ls -lAhG'
-alias ls='ls -lAhG'
-alias grep='grep -i --color=always'
-alias fuck='eval $(thefuck $(fc -ln -1))'
-
-# Typos
-alias it='git'
-alias gi='git'
-alias tit='git'
-alias sl='ls'
-
+# GCP
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
 source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
 
+# NPM
 export PATH=~/workspace/node_modules/.bin:$PATH
 
 # AWS Credentials as ENV VARs
