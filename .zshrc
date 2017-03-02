@@ -17,3 +17,17 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
+
+# Prompt after sourcing oh-my-zsh becuase reasons:
+# Looks like: danielfrg at host in ~ (with some spaces)
+# Blue user: %{$fg[blue]%}%n%{$reset_color%}
+# Green host: %{$fg[green]%}%m%{$reset_color%}
+# Blue location: %{$fg[cyan]%}%c%{$reset_color%}
+PROMPT=$'%{$fg[blue]%}%n%{$reset_color%} at %{$fg[green]%}%m%{$reset_color%} in %{$fg[cyan]%}%~%{$reset_color%} $(git_prompt_info)\n${ret_status} %{$reset_color%}'
+
+# Empty line after output
+function echo_blank() {
+  echo
+}
+# preexec_functions+=echo_blank
+precmd_functions+=echo_blank

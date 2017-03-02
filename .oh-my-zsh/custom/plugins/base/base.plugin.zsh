@@ -1,9 +1,3 @@
-#Prompt: danielfrg at host in ~ (with some spaces)
-# Blue user: %{$fg[blue]%}%n%{$reset_color%}
-# Green host: %{$fg[green]%}%m%{$reset_color%}
-# Blue location: %{$fg[cyan]%}%c%{$reset_color%}
-PROMPT=$'\n%{$fg[blue]%}%n%{$reset_color%} at %{$fg[green]%}%m%{$reset_color%} in %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)\n${ret_status} %{$reset_color%}'
-
 # Color scheme
 BASE16_SHELL="$HOME/workspace/dotfiles/iterm2/base16-tomorrow.dark.sh"
 [[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
